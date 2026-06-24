@@ -249,6 +249,7 @@
     transform: translateY(-50%);
     z-index: 2000000001;
     max-height: 90vh;
+    width: 280px;
   }
 
   @media (max-width: 768px) {
