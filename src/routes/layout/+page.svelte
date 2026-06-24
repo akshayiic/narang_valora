@@ -80,7 +80,6 @@
     { id: "Typical Floor Plan", label: "Typical Floor Plan" },
     { id: "Unit 1", label: "Unit 1" },
     { id: "Unit 2", label: "Unit 2" },
-    { id: "Unit 3", label: "Unit 3" },
     { id: "Unit 4", label: "Unit 4" },
     { id: "Unit 5", label: "Unit 5" },
     { id: "Unit 6", label: "Unit 6" },
