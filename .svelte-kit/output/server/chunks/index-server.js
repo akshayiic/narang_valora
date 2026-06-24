@@ -1,4 +1,4 @@
-import { x as current_component } from "./index2.js";
+import { l as current_component } from "./index2.js";
 function onDestroy(fn) {
   var context = (
     /** @type {import('#server').Component} */
@@ -6,9 +6,6 @@ function onDestroy(fn) {
   );
   (context.d ??= []).push(fn);
 }
-async function tick() {
-}
 export {
-  onDestroy as o,
-  tick as t
+  onDestroy as o
 };

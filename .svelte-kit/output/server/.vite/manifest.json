@@ -101,7 +101,7 @@
       "_index.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.Aftrp9Kh.css"
+      "_app/immutable/assets/_layout.BNijamO7.css"
     ],
     "assets": [
       "_app/immutable/assets/NarangLogo.BFFI2l6-.png",
@@ -138,16 +138,6 @@
     "src": "src/routes/+page.ts",
     "isEntry": true
   },
-  "src/routes/access/+page.svelte": {
-    "file": "entries/pages/access/_page.svelte.js",
-    "name": "entries/pages/access/_page.svelte",
-    "src": "src/routes/access/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index2.js",
-      "_index.js"
-    ]
-  },
   "src/routes/amenities/+page.svelte": {
     "file": "entries/pages/amenities/_page.svelte.js",
     "name": "entries/pages/amenities/_page.svelte",
@@ -175,18 +165,6 @@
       "_minimize-icon.js"
     ]
   },
-  "src/routes/highlights/+page.svelte": {
-    "file": "entries/pages/highlights/_page.svelte.js",
-    "name": "entries/pages/highlights/_page.svelte",
-    "src": "src/routes/highlights/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index2.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page.BSiIiwK_.css"
-    ]
-  },
   "src/routes/interiors/+page.svelte": {
     "file": "entries/pages/interiors/_page.svelte.js",
     "name": "entries/pages/interiors/_page.svelte",
@@ -201,18 +179,6 @@
     ],
     "css": [
       "_app/immutable/assets/_page.ml4Mvnt9.css"
-    ]
-  },
-  "src/routes/vicinities/+page.svelte": {
-    "file": "entries/pages/vicinities/_page.svelte.js",
-    "name": "entries/pages/vicinities/_page.svelte",
-    "src": "src/routes/vicinities/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index2.js",
-      "_minimize-icon.js",
-      "_index.js",
-      "_index-server.js"
     ]
   }
 }
