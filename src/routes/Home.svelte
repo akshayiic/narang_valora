@@ -56,7 +56,7 @@
 	type="button"
 	class="day-night-toggle"
 	on:click={toggleDayNight}
-	style="position: fixed; top: 3rem; right: 2rem; cursor: pointer; z-index: 1000001; background: white; padding: .4rem; border-radius: 50%;"
+	style="display: none; position: fixed; top: 3rem; right: 2rem; cursor: pointer; z-index: 1000001; background: white; padding: .4rem; border-radius: 50%;"
 	aria-label="Toggle day and night mode"
 >
 	{#if $isDay}
@@ -101,35 +101,13 @@
 		</svg>
 	{/if}
 </button>
-<div
-	class={$hotspotName == 'Exterior'
-		? 'cloudimage-360 exterior-cloudi !absolute left-0 top-0  z-[10]'
-		: 'cloudimage-360 invisible'}
-	data-folder="https://assets.vestate.io/narang-kane/exterior/day/"
-	data-filename="{'{'}index{'}'}.webp"
-	data-amount="24"
-	data-keys="false"
-	data-filters="blur:20"
-	data-drag-speed="400"
-	data-request-responsive-images="true"
-	data-info="false"
-	data-ratio=" 1"
-></div>
-
-<div
-	class={$hotspotName == 'night'
-		? 'cloudimage-360 exterior-cloudi !absolute left-0 top-0  z-[10]'
-		: 'cloudimage-360 invisible'}
-	data-folder="https://assets.vestate.io/narang-kane/exterior/night/"
-	data-filename="{'night{'}index{'}'}.webp"
-	data-amount="24"
-	data-keys="false"
-	data-filters="blur:20"
-	data-drag-speed="400"
-	data-request-responsive-images="true"
-	data-info="false"
-	data-ratio="1"
-></div>
+<div class="overview-image-wrapper">
+	<img
+		src="https://assets.vestate.io/webtool/narang/valora/brochure/overview/FRONT%20FACEING.webp"
+		alt="Overview"
+		class="overview-static-image"
+	/>
+</div>
 
 {#if $currentUI.highlights}
 	<div class="left-panel-wrapper">
@@ -246,5 +224,24 @@
 		align-content: center;
 		align-items: center;
 		gap: 0.6rem;
+	}
+
+	.overview-image-wrapper {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #000;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.overview-static-image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 </style>
