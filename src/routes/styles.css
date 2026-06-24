@@ -49,6 +49,10 @@
 	transition: 0.3s all ease-in-out;
 	transform: translate(-50%, 10px);
 	display: block;
+	pointer-events: none;
+}
+.nav-wrapper * {
+	pointer-events: auto;
 }
 .inner-btn-wrapper {
 	width: max-content;

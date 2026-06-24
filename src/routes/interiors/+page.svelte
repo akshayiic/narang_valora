@@ -47,6 +47,18 @@
       "https://assets.vestate.io/webtool/narang/valora/brochure/floorPlan/assets/Unit%206.webp",
     "Unit 7":
       "https://assets.vestate.io/webtool/narang/valora/brochure/floorPlan/assets/Unit%207.webp",
+    "Unit 05 + 06 6BHK Duplex Lower Level":
+      "https://assets.vestate.io/webtool/narang/valora/brochure/floorPlan/assets/Unit01-02-6BHK-Duplex-Upper-Level.webp",
+    "Unit 05 + 06 6BHK Duplex Upper Level":
+      "https://assets.vestate.io/webtool/narang/valora/brochure/floorPlan/assets/Unit-01-02-6BHK-Duplex-Lower-Level.webp",
+    "Unit 07 5.5BHK Duplex Lower Level":
+      "https://assets.vestate.io/webtool/narang/valora/brochure/floorPlan/assets/Unit-05-06-6BHK-Duplex-Lower-Level.webp",
+    "Unit 07 5.5BHK Duplex Upper Level":
+      "https://assets.vestate.io/webtool/narang/valora/brochure/floorPlan/assets/Unit-05-06-6BHK-Duplex-Upper-Level.webp",
+    "Unit 01 + 02 6BHK Duplex Upper Level":
+      "https://assets.vestate.io/webtool/narang/valora/brochure/floorPlan/assets/Unit-07-5-5BHK-Duplex-Lower-Level.webp",
+    "Unit 01 +02 6BHK Duplex Lower Level":
+      "https://assets.vestate.io/webtool/narang/valora/brochure/floorPlan/assets/Unit-07-5-5BHK-Duplex-Upper-Level.webp",
   };
 
   // Simple flat list of floor plans
@@ -54,8 +66,14 @@
     { id: "Jodi Floor Plan", label: "Jodi Floor Plan" },
     { id: "Jodi Unit 1+2 4BHK Jodi", label: "Jodi Unit 1+2 4BHK" },
     { id: "Jodi Unit 5+6 5BHK Jodi", label: "Jodi Unit 5+6 5BHK" },
-    { id: "Refuge Floor Plan 13th & 27th Floor", label: "Refuge 13th & 27th Floor" },
-    { id: "Refuge Floor Plan 20th & 34th Floor", label: "Refuge 20th & 34th Floor" },
+    {
+      id: "Refuge Floor Plan 13th & 27th Floor",
+      label: "Refuge 13th & 27th Floor",
+    },
+    {
+      id: "Refuge Floor Plan 20th & 34th Floor",
+      label: "Refuge 20th & 34th Floor",
+    },
     { id: "Refuge Floor Plan 41st Floor", label: "Refuge 41st Floor" },
     { id: "Refuge Floor Plan 6th Floor", label: "Refuge 6th Floor" },
     { id: "Typical Floor Plan", label: "Typical Floor Plan" },
@@ -66,6 +84,30 @@
     { id: "Unit 5", label: "Unit 5" },
     { id: "Unit 6", label: "Unit 6" },
     { id: "Unit 7", label: "Unit 7" },
+    {
+      id: "Unit 05 + 06 6BHK Duplex Lower Level",
+      label: "Unit 05 + 06 6BHK Duplex Lower Level",
+    },
+    {
+      id: "Unit 05 + 06 6BHK Duplex Upper Level",
+      label: "Unit 05 + 06 6BHK Duplex Upper Level",
+    },
+    {
+      id: "Unit 07 5.5BHK Duplex Lower Level",
+      label: "Unit 07 5.5BHK Duplex Lower Level",
+    },
+    {
+      id: "Unit 07 5.5BHK Duplex Upper Level",
+      label: "Unit 07 5.5BHK Duplex Upper Level",
+    },
+    {
+      id: "Unit 01 + 02 6BHK Duplex Upper Level",
+      label: "Unit 01 + 02 6BHK Duplex Upper Level",
+    },
+    {
+      id: "Unit 01 +02 6BHK Duplex Lower Level",
+      label: "Unit 01 +02 6BHK Duplex Lower Level",
+    },
   ];
 
   let currentImage = writable();
@@ -162,7 +204,11 @@
 <!-- Static Image Container -->
 <div id="floor-plans-image-container" class="floor-plans-image-wrapper">
   {#if $currentImage}
-    <img src={$currentImage} alt="Floor Plan" class="floor-plans-static-image" />
+    <img
+      src={$currentImage}
+      alt="Floor Plan"
+      class="floor-plans-static-image"
+    />
   {:else}
     <img
       src={floorPlanImages[floorPlansList[0].id]}
@@ -198,7 +244,7 @@
     right: 20px;
     left: auto;
     transform: translateY(-50%);
-    z-index: 10;
+    z-index: 2000000001;
     max-height: 90vh;
   }
 

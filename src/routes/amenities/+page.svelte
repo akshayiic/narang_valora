@@ -187,13 +187,13 @@
     position: fixed;
     bottom: 20px;
     left: 20px;
-    z-index: 10;
+    z-index: 2000000001;
     max-height: 90vh;
   }
 
   @media (max-width: 768px) {
     .left-panel-wrapper {
-      bottom: 10px;
+      bottom: 75px;
       top: auto;
       left: 10px;
       right: 10px;
