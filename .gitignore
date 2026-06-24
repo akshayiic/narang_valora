@@ -1,1 +1,16 @@
+# SvelteKit build output
+.svelte-kit
+build
+dist
+
+# Node dependencies
 node_modules
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
