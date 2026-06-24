@@ -179,23 +179,24 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #000;
+    background: #fff;
     z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .floor-plans-static-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
 
   .left-panel-wrapper {
     position: fixed;
     top: 50%;
-    left: 20px;
+    right: 20px;
+    left: auto;
     transform: translateY(-50%);
     z-index: 10;
     max-height: 90vh;

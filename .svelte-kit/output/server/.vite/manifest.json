@@ -101,7 +101,7 @@
       "_index.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.BNijamO7.css"
+      "_app/immutable/assets/_layout.CK8k3MXw.css"
     ],
     "assets": [
       "_app/immutable/assets/NarangLogo.BFFI2l6-.png",
@@ -151,7 +151,7 @@
       "_index.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.B_wQpwiy.css"
+      "_app/immutable/assets/_page.zaiIEt_x.css"
     ]
   },
   "src/routes/brochure/+page.svelte": {
@@ -178,7 +178,7 @@
       "_index.js"
     ],
     "css": [
-      "_app/immutable/assets/_page.ml4Mvnt9.css"
+      "_app/immutable/assets/_page.mG3qYbQX.css"
     ]
   }
 }

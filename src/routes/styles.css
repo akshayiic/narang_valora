@@ -273,16 +273,14 @@ input[type='checkbox'] {
 }
 
 @keyframes rotatenow {
-	0% {
-		transform: rotate(0);
+	0%, 10% {
+		transform: rotate(0deg);
 	}
-
-	50% {
-		transform: rotate(45deg);
-	}
-
-	100% {
+	40%, 60% {
 		transform: rotate(90deg);
+	}
+	90%, 100% {
+		transform: rotate(0deg);
 	}
 }
 
@@ -316,26 +314,33 @@ nav button {
 	}
 
 	.rotate-to-view {
-		display: block !important;
-		position: absolute;
-		top: 0;
-		background-color: black;
-		height: 100vh; /* Fallback */
-		height: calc(var(--vh, 1vh) * 100); /* JavaScript-controlled dynamic fallback */
-
-		width: 100vw;
-		color: white;
-		z-index: 2000000002;
-		overflow: hidden;
-		text-align: center;
+		display: flex !important;
+		flex-direction: column !important;
+		justify-content: center !important;
+		align-items: center !important;
+		position: fixed !important;
+		top: 0 !important;
+		left: 0 !important;
+		right: 0 !important;
+		bottom: 0 !important;
+		width: 100vw !important;
+		height: 100vh !important;
+		height: 100dvh !important;
+		background-color: #000000 !important;
+		color: white !important;
+		z-index: 2147483647 !important;
+		overflow: hidden !important;
+		text-align: center !important;
+		padding: 2rem !important;
+		box-sizing: border-box !important;
 	}
 
 	.rotate-to-view svg {
-		max-width: 200px;
-		display: block;
-		animation: rotatenow 5s ease-in-out 0.5s forwards;
-		margin: auto;
-		margin-bottom: 0rem;
+		width: 150px !important;
+		height: auto !important;
+		display: block !important;
+		animation: rotatenow 4s ease-in-out infinite !important;
+		margin: 0 auto 2rem auto !important;
 	}
 }
 

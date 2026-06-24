@@ -108,25 +108,58 @@
 
 <div class="app">
   <slot />
+
+  <div class="rotate-to-view">
+    <svg
+      width="594"
+      height="641"
+      viewBox="0 0 594 641"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_323_2301)">
+        <path d="M251.999 151H341.999" stroke="#fff" stroke-width="12" stroke-linecap="round" />
+        <circle cx="296.999" cy="457" r="12" fill="#fff" />
+      </g>
+      <rect x="203.999" y="147" width="186" height="352" rx="12" stroke="#fff" stroke-width="8" />
+      <path
+        d="M343.449 618.795C341.64 617.527 341.2 615.033 342.467 613.224L363.116 583.734C364.383 581.925 366.877 581.485 368.687 582.752C370.496 584.019 370.936 586.513 369.669 588.323L351.314 614.536L377.527 632.89C379.337 634.157 379.777 636.651 378.51 638.461C377.243 640.271 374.748 640.71 372.939 639.443L343.449 618.795ZM581.096 274.468C580.713 272.292 582.165 270.218 584.341 269.834C586.517 269.451 588.591 270.903 588.975 273.079L581.096 274.468ZM345.049 611.579C421.054 598.177 488.623 555.131 532.891 491.91L539.444 496.499C493.959 561.458 424.533 605.687 346.438 619.457L346.438 619.457ZM532.891 491.91C577.158 428.69 594.498 350.474 581.096 274.468L588.975 273.079C602.745 351.174 584.928 431.54 539.444 496.499L532.891 491.91Z"
+        fill="white"
+      />
+      <path
+        d="M349.021 32.1887C350.288 33.9983 349.848 36.4925 348.038 37.7596L318.549 58.4083C316.739 59.6754 314.245 59.2356 312.978 57.426C311.711 55.6164 312.151 53.1222 313.96 51.8551L340.173 33.5007L321.819 7.28779C320.552 5.47817 320.991 2.98399 322.801 1.71688C324.611 0.449769 327.105 0.88956 328.372 2.69918L349.021 32.1887ZM125.313 83.3514L127.607 86.628L125.313 83.3514ZM7.93895 274.47C7.55531 276.645 5.4807 278.098 3.30513 277.714C1.12953 277.331 -0.323135 275.256 0.0604705 273.08L7.93895 274.47ZM345.05 38.4222C269.044 25.0204 190.828 42.3605 127.607 86.628L123.019 80.0748C187.977 34.5903 268.344 16.7735 346.439 30.5437L345.05 38.4222ZM127.607 86.628C64.3868 130.895 21.3408 198.464 7.93895 274.47L0.0604705 273.08C13.8308 194.985 58.0601 125.559 123.019 80.0748L127.607 86.628Z"
+        fill="white"
+      />
+      <defs>
+        <clipPath id="clip0_323_2301">
+          <rect x="203.999" y="147" width="186" height="352" rx="12" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+    <p class="mt-8 text-xl font-bold px-6 tracking-wide leading-relaxed">
+      Please rotate your device to landscape mode to access the website.
+    </p>
+  </div>
+
   {#if $page.url.pathname.includes('/interiors')}
     <img
       src={mainLogo}
       alt=""
       id="mainlogo"
-      class="absolute right-5 w-[10rem] h-[10rem] top-5 z-[2000000002] bg-white p-2 rounded-lg shadow-sm"
+      class="absolute right-3 lg:right-5 top-3 lg:top-5 z-[2000000002] bg-white p-1.5 lg:p-2 rounded-lg shadow-sm"
     />
   {:else}
     <img
       src={mainLogo}
       alt=""
       id="mainlogo"
-      class="absolute left-5 w-[10rem] h-[10rem] top-5 z-[2000000002] bg-white p-2 rounded-lg shadow-sm"
+      class="absolute left-3 lg:left-5 top-3 lg:top-5 z-[2000000002] bg-white p-1.5 lg:p-2 rounded-lg shadow-sm"
     />
     <img
       src={narang}
       alt=""
       id="naranglogo"
-      class="absolute right-20 top-[2.75rem] z-[200] w-[10rem] rounded-lg bg-white p-2 shadow-sm"
+      class="absolute right-3 lg:right-20 top-3 lg:top-[2.75rem] z-[200] rounded-lg bg-white p-1.5 lg:p-2 shadow-sm"
     />
   {/if}
 
@@ -391,3 +424,25 @@
     </nav>
   </div>
 </div>
+
+<style>
+  #mainlogo {
+    width: 4rem;
+    height: 4rem;
+  }
+  #naranglogo {
+    width: 4rem;
+    height: auto;
+  }
+
+  @media (min-width: 1024px) {
+    #mainlogo {
+      width: 10rem;
+      height: 10rem;
+    }
+    #naranglogo {
+      width: 10rem;
+      height: auto;
+    }
+  }
+</style>

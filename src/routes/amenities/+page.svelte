@@ -179,19 +179,19 @@
 
   .left-panel-wrapper {
     position: fixed;
-    top: 50%;
+    bottom: 20px;
     left: 20px;
-    transform: translateY(-50%);
     z-index: 10;
     max-height: 90vh;
   }
 
   @media (max-width: 768px) {
     .left-panel-wrapper {
-      top: 50%;
+      bottom: 10px;
+      top: auto;
       left: 10px;
       right: 10px;
-      transform: translateY(-50%);
+      transform: none;
       max-height: 80vh;
     }
 
