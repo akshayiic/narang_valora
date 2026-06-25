@@ -102,7 +102,7 @@
     </svg>
   {/if}
 </button>
-<div class="overview-image-wrapper">
+<div class=" ">
   <img
     src="https://assets.vestate.io/webtool/narang/valora/brochure/overview/FRONT%20FACEING.webp"
     alt="Overview"

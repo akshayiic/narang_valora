@@ -6,6 +6,7 @@
   import poweredByVretail from "$lib/images/powered-vretail.png";
   import instructionIcon from "$lib/images/instruction-icon.svg";
   import { onMount } from "svelte";
+  import { goto } from "$app/navigation";
   const currentUI = getContext("currentUI");
   const walkthroughDisabled = getContext("walkthroughDisabled");
 
@@ -77,20 +78,25 @@
         <button
           id="v-start-btn"
           on:click={() => {
-            UIPanel.set("sign-up");
-            if (!(window.self !== window.top) && window.innerWidth < 1200) {
-              if (document.body.requestFullscreen) {
-                document.body.requestFullscreen();
-              } else if (document.body.webkitRequestFullscreen) {
-                /* Safari */
-                document.body.webkitRequestFullscreen();
-              } else if (document.body.msRequestFullscreen) {
-                /* IE11 */
-                document.body.msRequestFullscreen();
+            const isFirstLoad = !localStorage.getItem("first_load_redirected");
+            if (isFirstLoad) {
+              localStorage.setItem("first_load_redirected", "true");
+              goto("/renders");
+            } else {
+              goto("/renders");
+              UIPanel.set("sign-up");
+              if (!(window.self !== window.top) && window.innerWidth < 1200) {
+                if (document.body.requestFullscreen) {
+                  document.body.requestFullscreen();
+                } else if (document.body.webkitRequestFullscreen) {
+                  /* Safari */
+                  document.body.webkitRequestFullscreen();
+                } else if (document.body.msRequestFullscreen) {
+                  /* IE11 */
+                  document.body.msRequestFullscreen();
+                }
               }
             }
-
-            console.log("go fullscreen");
           }}
           class="bg-all-none !w-fit p-0"
         >
