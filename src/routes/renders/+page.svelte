@@ -60,7 +60,7 @@
 
   // Simple flat list of amenities
   const amenitiesList = [
-    { id: "overview", label: "Overview" },
+    { id: "overview", label: "Narang Valora" },
     { id: "outdoor_lawn", label: "Outdoor Lawn" },
     { id: "Badminton_Piclkleball court", label: "Badminton/Pickleball Court" },
     { id: "Banquet 300 01", label: "Banquet" },
