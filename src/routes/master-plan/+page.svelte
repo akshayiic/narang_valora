@@ -48,7 +48,7 @@
 
   .overview-static-image {
     max-width: 100%;
-    max-height: 107%;
+    max-height: 100%;
     width: auto;
     height: auto;
     object-fit: contain;
