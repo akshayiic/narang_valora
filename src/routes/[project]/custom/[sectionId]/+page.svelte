@@ -52,16 +52,9 @@
 	$: images = rawImages.map(normalizeImage).filter((img) => img.url);
 	// Supported modes: 'single' (one image, no controls), 'pages' (prev/next), 'dropdown' (list)
 	$: mode = section?.mode === 'pages' || section?.mode === 'single' ? section.mode : 'dropdown';
-	// Image fit: 'cover' fills the whole screen; 'contain' fits inside a box that clears the UI chrome.
-	$: sectionNameLower = section?.name?.toLowerCase() || '';
-	$: isMasterPlanOrLayout =
-		sectionNameLower.includes('master plan') || sectionNameLower.includes('layout');
 	$: rawImageFit = activeItem?.imageFit || section?.imageFit;
 	$: imageFit =
-		(typeof rawImageFit === 'string' && rawImageFit.toLowerCase() === 'cover') ||
-		isMasterPlanOrLayout
-			? 'cover'
-			: 'contain';
+		typeof rawImageFit === 'string' && rawImageFit.toLowerCase() === 'cover' ? 'cover' : 'contain';
 
 	// Current image index (reset when section changes)
 
@@ -71,6 +64,11 @@
 			return url.replace('https://assets.vestate.io', '');
 		}
 		return url;
+	}
+
+	function encodeUrlSpaces(url) {
+		if (!url) return url;
+		return url.replace(/ /g, '%20');
 	}
 
 	let currentIndex = 0;
@@ -184,8 +182,8 @@
 		}
 
 		try {
-			const dataUrl = proxifyUrl(`${activeItem.zipUrl}/data.json`);
-			const tilesFolder = proxifyUrl(`${activeItem.zipUrl}/tiles`);
+			const dataUrl = proxifyUrl(`${encodeUrlSpaces(activeItem.zipUrl)}/data.json?v=2`);
+			const tilesFolder = proxifyUrl(`${encodeUrlSpaces(activeItem.zipUrl)}/tiles`);
 
 			const res = await fetch(dataUrl);
 			if (!res.ok) throw new Error('Failed to fetch panorama config');
@@ -198,9 +196,9 @@
 			const createScene = (sceneData) => {
 				const { id, levels, faceSize, initialViewParameters } = sceneData;
 				const source = Marzipano.ImageUrlSource.fromString(
-					`${tilesFolder}/${id}/{z}/{f}/{y}/{x}.jpg`,
+					`${tilesFolder}/${id}/{z}/{f}/{y}/{x}.jpg?v=2`,
 					{
-						cubeMapPreviewUrl: `${tilesFolder}/${id}/preview.jpg`
+						cubeMapPreviewUrl: `${tilesFolder}/${id}/preview.jpg?v=2`
 					}
 				);
 				const geometry = new Marzipano.CubeGeometry(levels);
@@ -509,7 +507,7 @@
 
 		for (const item of zipItems) {
 			try {
-				const res = await fetch(proxifyUrl(`${item.zipUrl}/data.json`));
+				const res = await fetch(proxifyUrl(`${encodeUrlSpaces(item.zipUrl)}/data.json?v=2`));
 				if (res.ok) {
 					const data = await res.json();
 					catzipScenesMap[item.id] = data.scenes || [];

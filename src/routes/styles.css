@@ -596,10 +596,8 @@ button {
 .cloudimage-360-inner-box canvas,
 .vicinity-box canvas {
 	width: 100vw !important;
-	max-width: none !important;
-	height: 100vh !important;
+	max-width: calc(1920 * 100vh / 1080);
 	height: 100dvh !important;
-	object-fit: cover !important;
 }
 .btn-group {
 	display: flex;

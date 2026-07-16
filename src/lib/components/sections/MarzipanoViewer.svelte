@@ -12,8 +12,23 @@
 	import SleekAccordion from '$lib/components/ui/sleek/SleekAccordion.svelte';
 	import SleekButton from '$lib/components/ui/sleek/SleekButton.svelte';
 
+	import { dev } from '$app/environment';
+
 	export let config;
 	export let sectionId;
+
+	function proxifyUrl(url) {
+		if (!url) return url;
+		if (dev && url.startsWith('https://assets.vestate.io')) {
+			return url.replace('https://assets.vestate.io', '');
+		}
+		return url;
+	}
+
+	function encodeUrlSpaces(url) {
+		if (!url) return url;
+		return url.replace(/ /g, '%20');
+	}
 
 	let viewer;
 	let Marzipano;
@@ -29,8 +44,12 @@
 	let currentCategory = null;
 	let pendingSceneId = null;
 
-	$: dataJson = currentCategory?.zipUrl ? `${currentCategory.zipUrl}/data.json` : null;
-	$: tilesFolder = currentCategory?.zipUrl ? `${currentCategory.zipUrl}/tiles` : null;
+	$: dataJson = currentCategory?.zipUrl
+		? proxifyUrl(`${encodeUrlSpaces(currentCategory.zipUrl)}/data.json?v=2`)
+		: null;
+	$: tilesFolder = currentCategory?.zipUrl
+		? proxifyUrl(`${encodeUrlSpaces(currentCategory.zipUrl)}/tiles`)
+		: null;
 
 	let allScenes = {};
 	let appData = null;
@@ -100,7 +119,7 @@
 					return { ...category, scenes };
 				}
 				try {
-					const dataUrl = `${category.zipUrl}/data.json`;
+					const dataUrl = proxifyUrl(`${encodeUrlSpaces(category.zipUrl)}/data.json?v=2`);
 					const res = await fetch(dataUrl);
 					if (!res.ok) return null;
 					const data = await res.json();
@@ -140,8 +159,8 @@
 		const createScene = (sceneData) => {
 			const { id, levels, faceSize, initialViewParameters } = sceneData;
 			const source = Marzipano.ImageUrlSource.fromString(
-				`${tilesFolder}/${id}/{z}/{f}/{y}/{x}.jpg`,
-				{ cubeMapPreviewUrl: `${tilesFolder}/${id}/preview.jpg` }
+				`${tilesFolder}/${id}/{z}/{f}/{y}/{x}.jpg?v=2`,
+				{ cubeMapPreviewUrl: `${tilesFolder}/${id}/preview.jpg?v=2` }
 			);
 			const geometry = new Marzipano.CubeGeometry(levels);
 			const limiter = Marzipano.RectilinearView.limit.traditional(faceSize, (120 * Math.PI) / 180);

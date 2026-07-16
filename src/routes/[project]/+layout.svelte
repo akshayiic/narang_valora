@@ -55,6 +55,9 @@
 	$: theme = config?.theme || {};
 	$: primaryColor = theme.primaryColor || '#4434dd';
 	$: primaryColorLight = theme.secondaryColor || '#8076ee';
+
+	$: pathParts = $page.url.pathname.split('/').filter(Boolean);
+	$: isRootProjectPage = pathParts.length === 1;
 </script>
 
 <div
@@ -67,11 +70,11 @@
 	{:else if error}
 		<div class="flex h-full w-full items-center justify-center text-red-500">{error}</div>
 	{:else}
-		{#if $page.route.id === '/[project]' && $UIPanel === 'intro'}
+		{#if isRootProjectPage && $UIPanel === 'intro'}
 			{#if $projectConfig?.projectLogo}
 				<a
 					href="/{$page.params.project}"
-					class="fixed left-6 top-6 z-[99999999] max-w-[120px] transition-transform duration-300 hover:scale-[1.02] sm:max-w-[150px] md:max-w-[180px]"
+					class="fixed left-6 top-6 z-[2000000010] max-w-[120px] transition-transform duration-300 hover:scale-[1.02] sm:max-w-[150px] md:max-w-[180px]"
 				>
 					<img
 						src={$projectConfig.projectLogo}
@@ -82,7 +85,7 @@
 			{/if}
 			{#if $projectConfig?.orgLogo}
 				<div
-					class="fixed right-6 top-6 z-[99999999] max-w-[120px] sm:max-w-[150px] md:max-w-[180px]"
+					class="fixed right-6 top-6 z-[2000000010] max-w-[120px] sm:max-w-[150px] md:max-w-[180px]"
 				>
 					<img
 						src={$projectConfig.orgLogo}
