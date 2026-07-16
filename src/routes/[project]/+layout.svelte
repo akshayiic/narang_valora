@@ -11,7 +11,6 @@
 	let config = null;
 	let error = null;
 	let loading = true;
-	$: project = $page.params.project;
 	$: env = data?.env || 'production';
 	$: org = data?.org;
 	$: prj = data?.prj;
@@ -56,11 +55,10 @@
 	$: theme = config?.theme || {};
 	$: primaryColor = theme.primaryColor || '#4434dd';
 	$: primaryColorLight = theme.secondaryColor || '#8076ee';
-	$: sections = Object.keys(config?.sectionVisibility || {}).filter(k => config.sectionVisibility[k]);
 </script>
 
 <div
-	class="app h-screen w-screen flex flex-col bg-gray-900 text-white overflow-hidden"
+	class="app h-screen w-screen flex flex-col bg-gray-900 text-white overflow-hidden relative"
 	style:--primary-color={primaryColor}
 	style:--primary-color-light={primaryColorLight}
 >
@@ -69,30 +67,6 @@
 	{:else if error}
 		<div class="flex h-full w-full items-center justify-center text-red-500">{error}</div>
 	{:else}
-		<header class="flex h-16 w-full items-center justify-between bg-black/50 px-6 backdrop-blur-md z-50 absolute top-0">
-			<div class="flex items-center gap-4">
-				{#if config.orgLogo}
-					<img src={config.orgLogo} alt="Org Logo" class="h-8 object-contain" />
-				{/if}
-				<span class="font-bold">{config.projectName}</span>
-			</div>
-			
-			<nav class="flex gap-4">
-				{#each sections as section}
-					<a
-						href={`/${project}/${section}`}
-						class="rounded px-4 py-2 transition-colors hover:bg-white/10 {$page.params.sectionId === section ? 'bg-white/20 font-bold' : ''}"
-					>
-						{section}
-					</a>
-				{/each}
-			</nav>
-			
-			{#if config.projectLogo}
-				<img src={config.projectLogo} alt="Project Logo" class="h-8 object-contain" />
-			{/if}
-		</header>
-		
 		<main class="flex-1 w-full h-full relative">
 			<slot />
 		</main>
