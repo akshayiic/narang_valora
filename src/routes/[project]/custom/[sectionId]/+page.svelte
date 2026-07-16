@@ -53,9 +53,15 @@
 	// Supported modes: 'single' (one image, no controls), 'pages' (prev/next), 'dropdown' (list)
 	$: mode = section?.mode === 'pages' || section?.mode === 'single' ? section.mode : 'dropdown';
 	// Image fit: 'cover' fills the whole screen; 'contain' fits inside a box that clears the UI chrome.
+	$: sectionNameLower = section?.name?.toLowerCase() || '';
+	$: isMasterPlanOrLayout =
+		sectionNameLower.includes('master plan') || sectionNameLower.includes('layout');
 	$: rawImageFit = activeItem?.imageFit || section?.imageFit;
 	$: imageFit =
-		typeof rawImageFit === 'string' && rawImageFit.toLowerCase() === 'cover' ? 'cover' : 'contain';
+		(typeof rawImageFit === 'string' && rawImageFit.toLowerCase() === 'cover') ||
+		isMasterPlanOrLayout
+			? 'cover'
+			: 'contain';
 
 	// Current image index (reset when section changes)
 
@@ -905,6 +911,7 @@
 	.custom-image-stage.is-cover .custom-image {
 		width: 100%;
 		height: 100%;
+		object-fit: cover;
 	}
 
 	/* Contain: image sits inside a box that clears the top chrome (pager / logos)

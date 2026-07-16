@@ -59,7 +59,7 @@
 
 {#if isRightSidebar}
 	<div
-		class="fixed left-0 top-40 z-[99999999999999] flex h-[50%] w-[350px] max-w-[90vw] flex-col overflow-y-auto rounded-xl border-r border-white/10 bg-[#0f1115]/60 shadow-2xl backdrop-blur-xl transition-transform duration-500 {isMinimized
+		class="fixed left-0 top-40 z-[99999999999999] flex h-[50%] w-[300px] max-w-[90vw] flex-col overflow-y-auto rounded-xl border-r border-white/10 bg-[#0f1115]/60 shadow-2xl backdrop-blur-xl transition-transform duration-500 {isMinimized
 			? '-translate-x-full'
 			: 'translate-x-0'}"
 	>

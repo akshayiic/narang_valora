@@ -3,7 +3,7 @@
 	import '../styles.css';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
-	import { projectConfig, collabEnv } from '../../stores/ui';
+	import { projectConfig, collabEnv, UIPanel } from '../../stores/ui';
 	import { fetchConfig } from '$lib/services/configLoader';
 
 	export let data;
@@ -67,17 +67,30 @@
 	{:else if error}
 		<div class="flex h-full w-full items-center justify-center text-red-500">{error}</div>
 	{:else}
-		{#if $projectConfig?.projectLogo}
-			<a
-				href="/{$page.params.project}"
-				class="fixed right-6 top-6 z-[99999999] max-w-[120px] transition-transform duration-300 hover:scale-[1.02] sm:max-w-[150px] md:max-w-[180px]"
-			>
-				<img
-					src={$projectConfig.projectLogo}
-					alt="Project Logo"
-					class="h-auto max-h-[40px] w-full object-contain sm:max-h-[50px] md:max-h-[90px]"
-				/>
-			</a>
+		{#if $page.route.id === '/[project]' && $UIPanel === 'intro'}
+			{#if $projectConfig?.projectLogo}
+				<a
+					href="/{$page.params.project}"
+					class="fixed left-6 top-6 z-[99999999] max-w-[120px] transition-transform duration-300 hover:scale-[1.02] sm:max-w-[150px] md:max-w-[180px]"
+				>
+					<img
+						src={$projectConfig.projectLogo}
+						alt="Project Logo"
+						class="h-auto max-h-[40px] w-full object-contain sm:max-h-[50px] md:max-h-[60px]"
+					/>
+				</a>
+			{/if}
+			{#if $projectConfig?.orgLogo}
+				<div
+					class="fixed right-6 top-6 z-[99999999] max-w-[120px] sm:max-w-[150px] md:max-w-[180px]"
+				>
+					<img
+						src={$projectConfig.orgLogo}
+						alt="Organization Logo"
+						class="h-auto max-h-[40px] w-full object-contain sm:max-h-[50px] md:max-h-[60px]"
+					/>
+				</div>
+			{/if}
 		{/if}
 		<main class="relative h-full w-full flex-1">
 			<slot />
