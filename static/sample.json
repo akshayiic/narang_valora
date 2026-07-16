@@ -1,0 +1,305 @@
+{
+	"projectId": "69b3bebca45f76907b2be1dc",
+	"projectName": "Raaya",
+	"description": "",
+	"orgId": "69b3beb1a45f76907b2be1d9",
+	"orgName": "Runwal",
+	"createdAt": "2026-03-13T07:37:32.113Z",
+	"updatedAt": "2026-03-13T13:01:46.545Z",
+	"overviewImages": {
+		"day": [
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/1.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/2.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/3.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/4.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/5.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/6.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/7.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/8.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/9.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/10.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/11.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/12.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/13.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/14.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/15.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/16.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/17.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/18.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/19.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/20.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/21.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/22.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/23.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Day/24.webp"
+		],
+		"evening": [
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/1.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/2.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/3.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/4.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/5.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/6.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/7.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/8.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/9.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/10.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/11.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/12.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/13.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/14.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/15.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/16.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/17.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/18.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/19.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/20.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/21.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/22.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/23.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Overview/Evening/24.webp"
+		],
+		"initialStartIndexDay": 10,
+		"initialStartIndexNight": 1
+	},
+	"collabToolEnabled": true,
+	"sectionVisibility": {
+		"overview": true,
+		"amenities": true,
+		"brochure": true,
+		"vicinities": true,
+		"exterior": true,
+		"interiors": true
+	},
+	"brochureSection": {
+		"items": [
+			{
+				"id": "item-1773390253686",
+				"label": "Walkthrough",
+				"type": "video",
+				"category": "walkthrough",
+				"order": 1,
+				"assets": [
+					{
+						"url": "https://assets.vestate.io/webtool/Runwal/Raaya/Brochure/Walkthrough/video/output.mp4",
+						"publicId": "asset-1773390311244-0",
+						"format": "mp4",
+						"size": 0,
+						"order": 1
+					}
+				],
+				"createdAt": "2026-03-13T08:24:13.686Z",
+				"updatedAt": "2026-03-13T08:25:11.244Z"
+			},
+			{
+				"id": "item-1773390318775",
+				"label": "Brochure",
+				"type": "image",
+				"category": "brochure",
+				"order": 2,
+				"assets": [
+					{
+						"url": "https://assets.vestate.io/webtool/Runwal/Raaya/Brochure/Brochure/assets/1.jpg",
+						"publicId": "asset-1773390330855-0",
+						"format": "jpg",
+						"size": 0,
+						"order": 1,
+						"pageNumber": 1
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/Runwal/Raaya/Brochure/Brochure/assets/2.jpg",
+						"publicId": "asset-1773390330855-1",
+						"format": "jpg",
+						"size": 0,
+						"order": 2,
+						"pageNumber": 2
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/Runwal/Raaya/Brochure/Brochure/assets/3.jpg",
+						"publicId": "asset-1773390330855-2",
+						"format": "jpg",
+						"size": 0,
+						"order": 3,
+						"pageNumber": 3
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/Runwal/Raaya/Brochure/Brochure/assets/4.jpg",
+						"publicId": "asset-1773390330855-3",
+						"format": "jpg",
+						"size": 0,
+						"order": 4,
+						"pageNumber": 4
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/Runwal/Raaya/Brochure/Brochure/assets/5.jpg",
+						"publicId": "asset-1773390330855-4",
+						"format": "jpg",
+						"size": 0,
+						"order": 5,
+						"pageNumber": 5
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/Runwal/Raaya/Brochure/Brochure/assets/6.jpg",
+						"publicId": "asset-1773390330855-5",
+						"format": "jpg",
+						"size": 0,
+						"order": 6,
+						"pageNumber": 6
+					}
+				],
+				"createdAt": "2026-03-13T08:25:18.775Z",
+				"updatedAt": "2026-03-13T08:25:30.855Z"
+			}
+		]
+	},
+	"vicinities": {
+		"day": [
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/1.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/2.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/3.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/4.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/5.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/6.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/7.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/8.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/9.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/10.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/11.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/12.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/13.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/14.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/15.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/16.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/17.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/18.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/19.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/20.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/21.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/22.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/23.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Day/24.webp"
+		],
+		"evening": [
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/1.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/2.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/3.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/4.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/5.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/6.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/7.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/8.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/9.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/10.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/11.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/12.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/13.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/14.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/15.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/16.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/17.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/18.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/19.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/20.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/21.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/22.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/23.webp",
+			"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Evening/24.webp"
+		],
+		"initialStartIndexDay": 1,
+		"initialStartIndexNight": 1,
+		"categories": [
+			{
+				"id": "vicinity-category-1773390345310",
+				"name": "Connectivity",
+				"images": [
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Connectivity/Acharya Atre Metro Station.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Connectivity/Bandra Worli Sea Link.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Connectivity/BKC.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Connectivity/Coastal Road.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Connectivity/CSMT.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Connectivity/Kamla Mills.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Connectivity/MTHL.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Connectivity/One International.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Connectivity/Peninsula Business Park.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Connectivity/Peninsula Corporate Park.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Connectivity/SenapatibapatRoad.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Connectivity/Worli Sewri Corridor.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Connectivity/WorliNaka.webp"
+				],
+				"order": 1
+			},
+			{
+				"id": "vicinity-category-1773397070491",
+				"name": "Garden",
+				"images": [
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Garden/Mahalaxmi Race Course.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Garden/NSCI.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Garden/Shivaji Park.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Vicinities/Garden/WIllingdon Sports Club.webp"
+				],
+				"order": 2
+			}
+		]
+	},
+	"exterior": {
+		"categories": [
+			{
+				"id": "exterior-category-1773395722900",
+				"name": "Podium",
+				"images": [
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/1.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/2.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/3.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/4.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/5.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/6.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/7.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/8.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/9.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/10.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/11.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/12.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/13.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/14.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/15.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/16.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/17.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/18.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/19.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/20.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/21.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/22.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/23.webp",
+					"https://assets.vestate.io/webtool/Runwal/Raaya/Exterior/Podium/24.webp"
+				],
+				"order": 1,
+				"initialViewIndex": 1
+			}
+		]
+	},
+	"amenities": {
+		"categories": [
+			{
+				"id": "amenity-category-1773395780284",
+				"name": "Gym",
+				"zipUrl": "https://assets.vestate.io/webtool/Runwal/Raaya/Amenities/Gym",
+				"order": 1
+			}
+		]
+	},
+	"interiors": {
+		"categories": [
+			{
+				"id": "interior-category-1773395817716",
+				"name": "4BHK",
+				"dollhouseImage": "https://assets.vestate.io/webtool/Runwal/Raaya/Interiors/4bhk/Dollhouse/4bhk.webp",
+				"zipUrl": "https://assets.vestate.io/webtool/Runwal/Raaya/Interiors/4bhk",
+				"order": 1
+			}
+		]
+	},
+	"introVideo": "https://assets.vestate.io/webtool/Runwal/Raaya/Logos/main-intro.mp4",
+	"projectLogo": "https://assets.vestate.io/webtool/Runwal/Raaya/Logos/Project Logo/raya.webp",
+	"collabToolProjectId": "Some Id",
+	"orgLogo": "https://assets.vestate.io/webtool/Runwal/Raaya/Logos/Org Logo/logo.webp"
+}
