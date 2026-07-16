@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+
 # web-vestate-template
+
 =======
+
 # V-Estate Webcore Editor
 
 A modern, interactive virtual tour web application for real estate projects. Built with SvelteKit, this tool renders property websites dynamically using configuration exported from the admin V-Estate editor.
@@ -302,4 +305,5 @@ This project follows standard SvelteKit conventions. Please ensure:
 Proprietary – V-Estate Platform
 
 For questions or support, contact the V-Estate engineering team.
->>>>>>> 8e86303 (initial commit)
+
+> > > > > > > 8e86303 (initial commit)

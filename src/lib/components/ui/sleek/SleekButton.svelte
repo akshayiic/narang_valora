@@ -5,7 +5,9 @@
 
 <button
 	on:click={onClick}
-	class="w-full text-left py-2 px-3 rounded-xl transition-all duration-300 text-sm tracking-wide {active ? 'bg-white/10 text-white font-medium shadow-sm border border-white/5' : 'text-white/60 hover:text-white hover:bg-white/5'}"
+	class="w-full rounded-xl px-3 py-2 text-left text-sm tracking-wide transition-all duration-300 {active
+		? 'border border-white/5 bg-white/10 font-medium text-white shadow-sm'
+		: 'text-white/60 hover:bg-white/5 hover:text-white'}"
 >
 	<slot />
 </button>

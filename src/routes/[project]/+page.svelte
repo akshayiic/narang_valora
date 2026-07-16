@@ -21,16 +21,23 @@
 					(s?.mode === 'dayNightPlus' ||
 						(Array.isArray(s?.images) && s.images.length > 0) ||
 						!!s?.image ||
-						(s?.dayNight && (Array.isArray(s.dayNight.day) || Array.isArray(s.dayNight.evening) || Array.isArray(s.dayNight.night))) ||
+						(s?.dayNight &&
+							(Array.isArray(s.dayNight.day) ||
+								Array.isArray(s.dayNight.evening) ||
+								Array.isArray(s.dayNight.night))) ||
 						(Array.isArray(s?.catzip) && s.catzip.length > 0) ||
 						(Array.isArray(s?.cat24) && s.cat24.length > 0) ||
 						(Array.isArray(s?.catstat) && s.catstat.length > 0) ||
 						(Array.isArray(s?.categories) && s.categories.length > 0))
 			)
 		: [];
-	
+
 	const getLabel = (conf, key, defaultLabel) => {
-		if (conf?.sectionAliases && typeof conf.sectionAliases[key] === 'string' && conf.sectionAliases[key].trim() !== '') {
+		if (
+			conf?.sectionAliases &&
+			typeof conf.sectionAliases[key] === 'string' &&
+			conf.sectionAliases[key].trim() !== ''
+		) {
 			return conf.sectionAliases[key].trim();
 		}
 		return defaultLabel;
@@ -38,10 +45,22 @@
 
 	$: defaultSections = [
 		{ key: 'overview', label: getLabel($projectConfig, 'overview', 'Overview'), icon: 'overview' },
-		{ key: 'amenities', label: getLabel($projectConfig, 'amenities', 'Amenities'), icon: 'amenities' },
-		{ key: 'interiors', label: getLabel($projectConfig, 'interiors', 'Interiors'), icon: 'interiors' },
+		{
+			key: 'amenities',
+			label: getLabel($projectConfig, 'amenities', 'Amenities'),
+			icon: 'amenities'
+		},
+		{
+			key: 'interiors',
+			label: getLabel($projectConfig, 'interiors', 'Interiors'),
+			icon: 'interiors'
+		},
 		{ key: 'exterior', label: getLabel($projectConfig, 'exterior', 'Exterior'), icon: 'exterior' },
-		{ key: 'vicinities', label: getLabel($projectConfig, 'vicinities', 'Vicinity'), icon: 'vicinities' },
+		{
+			key: 'vicinities',
+			label: getLabel($projectConfig, 'vicinities', 'Vicinity'),
+			icon: 'vicinities'
+		},
 		{ key: 'brochure', label: getLabel($projectConfig, 'brochure', 'Brochure'), icon: 'brochure' }
 	];
 
@@ -285,7 +304,7 @@
 								goto(`/${project}/${firstNavItem.id}`);
 							}
 						}
-						
+
 						if (!(window.self !== window.top) && window.innerWidth < 1200) {
 							if (document.body.requestFullscreen) {
 								document.body.requestFullscreen();
@@ -339,26 +358,25 @@
 			</div>
 		</div>
 	</div>
-{#if $projectConfig?.collabToolEnabled && $projectConfig?.orgName !== 'L&T Realty'}
-  <img
-    src={poweredByVretail}
-    alt="Powered by Vretail"
-    class="absolute bottom-5 right-6 z-[2000000002]"
-    loading="lazy"
-    decoding="async"
-  />
-{/if}
-
-{#if $projectConfig?.vstateWatermark}
+	{#if $projectConfig?.collabToolEnabled && $projectConfig?.orgName !== 'L&T Realty'}
 		<img
-		src="/vestate-iic.png"
-		alt="powered by vretail"
-		class="absolute bottom-5 right-6 z-[2000000002]"
-    loading="lazy"
-    decoding="async"
-	/>
-{/if}
+			src={poweredByVretail}
+			alt="Powered by Vretail"
+			class="absolute bottom-5 right-6 z-[2000000002]"
+			loading="lazy"
+			decoding="async"
+		/>
+	{/if}
 
+	{#if $projectConfig?.vstateWatermark}
+		<img
+			src="/vestate-iic.png"
+			alt="powered by vretail"
+			class="absolute bottom-5 right-6 z-[2000000002]"
+			loading="lazy"
+			decoding="async"
+		/>
+	{/if}
 {/if}
 
 <style>

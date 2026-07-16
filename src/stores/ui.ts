@@ -75,7 +75,10 @@ export const navItemsStore = derived(projectConfig, ($config) => {
 					(s?.mode === 'dayNightPlus' ||
 						(Array.isArray(s?.images) && s.images.length > 0) ||
 						!!s?.image ||
-						(s?.dayNight && (Array.isArray(s.dayNight.day) || Array.isArray(s.dayNight.evening) || Array.isArray(s.dayNight.night))) ||
+						(s?.dayNight &&
+							(Array.isArray(s.dayNight.day) ||
+								Array.isArray(s.dayNight.evening) ||
+								Array.isArray(s.dayNight.night))) ||
 						(Array.isArray(s?.catzip) && s.catzip.length > 0) ||
 						(Array.isArray(s?.cat24) && s.cat24.length > 0) ||
 						(Array.isArray(s?.catstat) && s.catstat.length > 0) ||
@@ -84,7 +87,11 @@ export const navItemsStore = derived(projectConfig, ($config) => {
 		: [];
 
 	const getLabel = (conf, key, defaultLabel) => {
-		if (conf?.sectionAliases && typeof conf.sectionAliases[key] === 'string' && conf.sectionAliases[key].trim() !== '') {
+		if (
+			conf?.sectionAliases &&
+			typeof conf.sectionAliases[key] === 'string' &&
+			conf.sectionAliases[key].trim() !== ''
+		) {
 			return conf.sectionAliases[key].trim();
 		}
 		return defaultLabel;

@@ -720,9 +720,6 @@ button {
 	}
 }
 
-
-
-
 /* Shrink the bottom navbar in mobile/tablet landscape so it doesn't cover the UI */
 @media (orientation: landscape) and (max-height: 600px) {
 	.nav-wrapper {

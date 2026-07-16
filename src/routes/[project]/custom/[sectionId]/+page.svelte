@@ -54,10 +54,11 @@
 	$: mode = section?.mode === 'pages' || section?.mode === 'single' ? section.mode : 'dropdown';
 	// Image fit: 'cover' fills the whole screen; 'contain' fits inside a box that clears the UI chrome.
 	$: rawImageFit = activeItem?.imageFit || section?.imageFit;
-	$: imageFit = (typeof rawImageFit === 'string' && rawImageFit.toLowerCase() === 'cover') ? 'cover' : 'contain';
+	$: imageFit =
+		typeof rawImageFit === 'string' && rawImageFit.toLowerCase() === 'cover' ? 'cover' : 'contain';
 
 	// Current image index (reset when section changes)
-	
+
 	function proxifyUrl(url) {
 		if (!url) return url;
 		if (dev && url.startsWith('https://assets.vestate.io')) {
@@ -102,6 +103,8 @@
 	}
 
 	let minimized = false;
+	let isFloorsMenuMinimized = false;
+	let isDropdownMinimized = false;
 	let panelMin = {
 		dayNight: true,
 		catzip: false,
@@ -115,10 +118,12 @@
 
 	function toggleCustomDayNight() {
 		if (!section?.dayNight) return;
-		
+
 		const hasDay = Array.isArray(section.dayNight.day) && section.dayNight.day.length > 0;
-		const hasEvening = (Array.isArray(section.dayNight.evening) && section.dayNight.evening.length > 0) || (Array.isArray(section.dayNight.night) && section.dayNight.night.length > 0);
-		
+		const hasEvening =
+			(Array.isArray(section.dayNight.evening) && section.dayNight.evening.length > 0) ||
+			(Array.isArray(section.dayNight.night) && section.dayNight.night.length > 0);
+
 		if (activeType !== 'dayNight') {
 			selectSectionItem('dayNight', null, { timeOfDay: hasDay ? 'day' : 'evening' });
 		} else {
@@ -193,7 +198,10 @@
 					}
 				);
 				const geometry = new Marzipano.CubeGeometry(levels);
-				const limiter = Marzipano.RectilinearView.limit.traditional(faceSize, (120 * Math.PI) / 180);
+				const limiter = Marzipano.RectilinearView.limit.traditional(
+					faceSize,
+					(120 * Math.PI) / 180
+				);
 				const view = new Marzipano.RectilinearView(initialViewParameters, limiter);
 				const scene = viewer.createScene({
 					source,
@@ -210,7 +218,8 @@
 
 				const imgHotspot = document.createElement('div');
 				const targetScene = appData.scenes.find((s) => s.id === hotspot.target);
-				const label = hotspot.name || (targetScene ? targetScene.name : hotspot.target) || 'Area Label';
+				const label =
+					hotspot.name || (targetScene ? targetScene.name : hotspot.target) || 'Area Label';
 
 				imgHotspot.innerText = label;
 				imgHotspot.classList.add('hotspot');
@@ -238,7 +247,13 @@
 				});
 			});
 
-			const targetSceneId = pendingSceneId && allScenes[pendingSceneId] ? pendingSceneId : appData.scenes[0].id;
+			const isDroneShots =
+				section?.catzipHeadName === 'Drone Shots' || section?.catzipHeadName === 'Aerial View';
+			const defaultSceneId = isDroneShots
+				? appData.scenes[appData.scenes.length - 1].id
+				: appData.scenes[0].id;
+			const targetSceneId =
+				pendingSceneId && allScenes[pendingSceneId] ? pendingSceneId : defaultSceneId;
 			allScenes[targetSceneId].scene.switchTo();
 			currentSceneId = targetSceneId;
 			panoScenes = appData.scenes;
@@ -276,16 +291,17 @@
 	function selectSectionItem(type: string, item: any, options: { timeOfDay?: string } = {}) {
 		const previousType = activeType;
 		const previousItemId = activeItem?.id;
-		
+
 		activeType = type;
 		activeItem = item;
 
 		if (type === 'dayNight') {
 			timeOfDay = options.timeOfDay || 'day';
 			const viewerId = timeOfDay === 'day' ? 'custom-day-viewer' : 'custom-evening-viewer';
-			const initialIndex = timeOfDay === 'day' 
-				? (section?.dayNight?.initialStartIndexDay || 1) - 1
-				: (section?.dayNight?.initialStartIndexNight || 1) - 1;
+			const initialIndex =
+				timeOfDay === 'day'
+					? (section?.dayNight?.initialStartIndexDay || 1) - 1
+					: (section?.dayNight?.initialStartIndexNight || 1) - 1;
 			switch360Viewer(viewerId, initialIndex);
 		} else if (type === 'cat24') {
 			const viewerId = `${item.id}-viewer`;
@@ -319,11 +335,14 @@
 	$: if (section && config && !initialized) {
 		if (section.mode === 'dayNightPlus') {
 			const hasDay = Array.isArray(section.dayNight?.day) && section.dayNight.day.length > 0;
-			const hasEvening = Array.isArray(section.dayNight?.evening) && section.dayNight.evening.length > 0;
+			const hasEvening =
+				Array.isArray(section.dayNight?.evening) && section.dayNight.evening.length > 0;
 			const hasNight = Array.isArray(section.dayNight?.night) && section.dayNight.night.length > 0;
 
 			if (hasDay || hasEvening || hasNight) {
-				selectSectionItem('dayNight', null, { timeOfDay: hasDay ? 'day' : (hasEvening ? 'evening' : 'night') });
+				selectSectionItem('dayNight', null, {
+					timeOfDay: hasDay ? 'day' : hasEvening ? 'evening' : 'night'
+				});
 			} else if (Array.isArray(section.catzip) && section.catzip.length > 0) {
 				selectSectionItem('catzip', section.catzip[0]);
 				panelMin = { ...panelMin, catzip: false, cat24: true, catstat: true, categories: true };
@@ -347,13 +366,21 @@
 
 	$: currentViewImageUrl = (() => {
 		if (activeType === 'catstat') {
-			return activeItem?.images?.[selectedImageIndex] ?? '';
+			const img = activeItem?.images?.[selectedImageIndex];
+			if (img && typeof img === 'object') {
+				return img.file || img.url || '';
+			}
+			return img ?? '';
 		}
 		if (activeType === 'categories') {
 			if (activeItem?.zipUrl) {
 				return '';
 			}
-			return activeItem?.images?.[selectedImageIndex] ?? activeItem?.image ?? '';
+			const img = activeItem?.images?.[selectedImageIndex] ?? activeItem?.image ?? '';
+			if (img && typeof img === 'object') {
+				return img.file || img.url || '';
+			}
+			return img;
 		}
 		if (activeType === 'default') {
 			return images[currentIndex]?.url ?? '';
@@ -362,7 +389,13 @@
 	})();
 
 	$: currentViewImageAlt = (() => {
-		if (activeType === 'catstat') return `${activeItem?.name || 'Static'} - Image ${selectedImageIndex + 1}`;
+		if (activeType === 'catstat') {
+			const img = activeItem?.images?.[selectedImageIndex];
+			if (img && typeof img === 'object' && img.name) {
+				return img.name;
+			}
+			return `${activeItem?.name || 'Static'} - Image ${selectedImageIndex + 1}`;
+		}
 		if (activeType === 'categories') return `${activeItem?.name || 'Category'}`;
 		if (activeType === 'default') return `${section?.name} - ${currentIndex + 1}`;
 		return '';
@@ -382,10 +415,14 @@
 
 	$: placeholderImage = (() => {
 		if (activeType === 'dayNight') {
-			const imgs = timeOfDay === 'day' ? (section?.dayNight?.day || []) : (section?.dayNight?.evening || section?.dayNight?.night || []);
-			const startIndex = timeOfDay === 'day' 
-				? (section?.dayNight?.initialStartIndexDay || 1) 
-				: (section?.dayNight?.initialStartIndexNight || 1);
+			const imgs =
+				timeOfDay === 'day'
+					? section?.dayNight?.day || []
+					: section?.dayNight?.evening || section?.dayNight?.night || [];
+			const startIndex =
+				timeOfDay === 'day'
+					? section?.dayNight?.initialStartIndexDay || 1
+					: section?.dayNight?.initialStartIndexNight || 1;
 			return imgs[startIndex - 1] || imgs[0] || '';
 		} else if (activeType === 'cat24') {
 			const imgs = activeItem?.images || [];
@@ -426,14 +463,15 @@
 				}
 				if (typeof window !== 'undefined' && (window as any).CI360) {
 					(window as any).CI360.init();
-					
+
 					// Set initial index for dayNight if active
 					await new Promise((resolve) => setTimeout(resolve, 100));
 					if (activeType === 'dayNight') {
 						const viewerId = timeOfDay === 'day' ? 'custom-day-viewer' : 'custom-evening-viewer';
-						const initialIndex = timeOfDay === 'day'
-							? (section.dayNight?.initialStartIndexDay || 1) - 1
-							: (section.dayNight?.initialStartIndexNight || 1) - 1;
+						const initialIndex =
+							timeOfDay === 'day'
+								? (section.dayNight?.initialStartIndexDay || 1) - 1
+								: (section.dayNight?.initialStartIndexNight || 1) - 1;
 						(window as any).CI360.setActiveIndex(viewerId, initialIndex);
 					} else if (activeType === 'cat24' && activeItem) {
 						const viewerId = `${activeItem.id}-viewer`;
@@ -458,7 +496,7 @@
 			zipItems.push(...section.catzip);
 		}
 		if (Array.isArray(section.categories)) {
-			section.categories.forEach(item => {
+			section.categories.forEach((item) => {
 				if (item.zipUrl) zipItems.push(item);
 			});
 		}
@@ -518,17 +556,22 @@
 
 	<!-- Loading overlay for CI360 views -->
 	{#if section.mode === 'dayNightPlus' && (activeType === 'dayNight' || activeType === 'cat24') && !viewerReady}
-		<LoadingOverlay
-			isVisible={true}
-			variant={placeholderImage ? 'transparent' : 'default'}
-		>
+		<LoadingOverlay isVisible={true} variant={placeholderImage ? 'transparent' : 'default'}>
 			{#if placeholderImage}
 				<div class="absolute inset-0 z-[-1]">
-					<img src={placeholderImage} alt="Loading..." class="h-full w-full object-cover" fetchpriority="high" decoding="async" />
+					<img
+						src={placeholderImage}
+						alt="Loading..."
+						class="h-full w-full object-cover"
+						fetchpriority="high"
+						decoding="async"
+					/>
 					<div class="absolute inset-0 bg-black/20"></div>
 				</div>
 				<div class="flex flex-col items-center">
-					<div class="mb-4 h-10 w-10 animate-spin rounded-full border-4 border-white/20 border-t-white"></div>
+					<div
+						class="mb-4 h-10 w-10 animate-spin rounded-full border-4 border-white/20 border-t-white"
+					></div>
 					<p class="text-sm font-medium uppercase tracking-widest text-white">Initializing 360°</p>
 				</div>
 			{/if}
@@ -537,7 +580,7 @@
 
 	<!-- Main content area -->
 	{#if section.mode === 'dayNightPlus' && (activeType === 'dayNight' || activeType === 'cat24')}
-		<div class="absolute inset-0 w-full h-full z-[5] pointer-events-auto bg-black">
+		<div class="pointer-events-auto absolute inset-0 z-[5] h-full w-full bg-black">
 			<!-- Day 360 Viewer -->
 			{#if section.dayNight && Array.isArray(section.dayNight.day) && section.dayNight.day.length > 0}
 				{@const dayFolder = getFolderFromImages(section.dayNight.day)}
@@ -559,8 +602,10 @@
 			{/if}
 
 			<!-- Evening 360 Viewer -->
-			{#if section.dayNight && (Array.isArray(section.dayNight.evening) && section.dayNight.evening.length > 0 || Array.isArray(section.dayNight.night) && section.dayNight.night.length > 0)}
-				{@const eveningFolder = getFolderFromImages(section.dayNight.evening || section.dayNight.night)}
+			{#if section.dayNight && ((Array.isArray(section.dayNight.evening) && section.dayNight.evening.length > 0) || (Array.isArray(section.dayNight.night) && section.dayNight.night.length > 0))}
+				{@const eveningFolder = getFolderFromImages(
+					section.dayNight.evening || section.dayNight.night
+				)}
 				<div
 					id="custom-evening-viewer"
 					class={viewerReady && activeType === 'dayNight' && timeOfDay === 'evening'
@@ -601,15 +646,27 @@
 			{/if}
 		</div>
 	{:else if activeType === 'catzip' || (activeType === 'categories' && activeItem?.zipUrl)}
-		<div use:panoAction={activeItem} class="absolute inset-0 w-full h-full z-0 bg-black animate-fade-in"></div>
+		<div
+			use:panoAction={activeItem}
+			class="animate-fade-in absolute inset-0 z-0 h-full w-full bg-black"
+		></div>
 	{:else}
 		<div
-			class="absolute inset-0 w-full h-full z-0 {imageFit === 'cover' ? 'bg-black' : 'bg-[#000000a6] backdrop-blur-md'}"
+			class="absolute inset-0 z-0 h-full w-full {imageFit === 'cover'
+				? 'bg-black'
+				: 'bg-[#000000a6] backdrop-blur-md'}"
 		>
 			<div class="custom-image-stage {imageFit === 'cover' ? 'is-cover' : 'is-contain'}">
 				{#if imageFit === 'contain'}
 					<!-- Blurred, filled backdrop of the same image for a smooth letterbox effect -->
-					<img class="custom-image-bg" src={currentViewImageUrl} alt="" aria-hidden="true" fetchpriority="high" decoding="async" />
+					<img
+						class="custom-image-bg"
+						src={currentViewImageUrl}
+						alt=""
+						aria-hidden="true"
+						fetchpriority="high"
+						decoding="async"
+					/>
 				{/if}
 				<img
 					class="custom-image"
@@ -626,11 +683,12 @@
 	<!-- Dropdown mode: selectable list of images -->
 	{#if section.mode !== 'dayNightPlus' && mode === 'dropdown'}
 		{#if config?.navStyle === 'sidebar'}
-			<SleekSidePanel 
-				isRightSidebar={true} 
+			<SleekSidePanel
+				isRightSidebar={true}
 				title={section.name || 'Menu'}
 				iconName={section.icon || 'layers'}
-				isMinimized={false}
+				isMinimized={isDropdownMinimized}
+				toggleMinimize={() => (isDropdownMinimized = !isDropdownMinimized)}
 				useLucideIcon={true}
 			>
 				{#each images as image, i}
@@ -684,8 +742,8 @@
 	<!-- Ensure SleekSidePanel is rendered for 'single' or 'pages' mode to provide global navigation -->
 	{#if section.mode !== 'dayNightPlus' && mode !== 'dropdown'}
 		{#if config?.navStyle === 'sidebar'}
-			<SleekSidePanel 
-				isRightSidebar={true} 
+			<SleekSidePanel
+				isRightSidebar={true}
 				title={section.name || 'Menu'}
 				iconName={section.icon || 'layers'}
 				isMinimized={false}
@@ -696,7 +754,19 @@
 
 	<!-- DayNightPlus Separate Accordions -->
 	{#if section.mode === 'dayNightPlus'}
-		<Sidebar {section} {panelMin} {activeType} {activeItem} {currentSceneId} bind:selectedImageIndex {catzipScenesMap} {selectSectionItem} {switchToScene} {togglePanel} isRightSidebar={config?.navStyle === 'sidebar'}>
+		<Sidebar
+			{section}
+			{panelMin}
+			{activeType}
+			{activeItem}
+			{currentSceneId}
+			bind:selectedImageIndex
+			{catzipScenesMap}
+			{selectSectionItem}
+			{switchToScene}
+			{togglePanel}
+			isRightSidebar={config?.navStyle === 'sidebar'}
+		>
 			<!-- Day & Night Toggle Button -->
 			{#if activeType === 'dayNight' && section.dayNight && ((Array.isArray(section.dayNight.day) && section.dayNight.day.length > 0) || (Array.isArray(section.dayNight.evening) && section.dayNight.evening.length > 0) || (Array.isArray(section.dayNight.night) && section.dayNight.night.length > 0))}
 				<button
@@ -709,7 +779,18 @@
 				>
 					{#if timeOfDay === 'day' || activeType !== 'dayNight'}
 						<!-- Sun icon -->
-						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sun" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-sun"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
 							<circle cx="12" cy="12" r="5"></circle>
 							<line x1="12" y1="1" x2="12" y2="3"></line>
 							<line x1="12" y1="21" x2="12" y2="23"></line>
@@ -722,13 +803,73 @@
 						</svg>
 					{:else}
 						<!-- Moon icon -->
-						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-moon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="icon icon-moon"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
 							<path d="M21 12.79A9 9 0 0111.21 3 7 7 0 1012 21a9 9 0 009-8.21z"></path>
 						</svg>
 					{/if}
 				</button>
 			{/if}
 		</Sidebar>
+
+		{#if (section?.catzipHeadName === 'Drone Shots' || section?.catzipHeadName === 'Aerial View') && activeType === 'catzip' && activeItem && catzipScenesMap[activeItem.id] && catzipScenesMap[activeItem.id].length > 0}
+			<div
+				class="fixed right-0 top-40 z-[99999999999999] flex h-[50%] w-[250px] max-w-[90vw] flex-col overflow-y-auto rounded-l-xl border-l border-white/10 bg-[#0f1115]/60 shadow-2xl backdrop-blur-xl transition-transform duration-500 {isFloorsMenuMinimized
+					? 'translate-x-full'
+					: 'translate-x-0'}"
+			>
+				<!-- Glass Header -->
+				<div class="flex items-center justify-between px-6 pt-6">
+					<span class="text-sm font-bold uppercase tracking-wider text-white/50">Floors</span>
+					<button
+						on:click={() => (isFloorsMenuMinimized = true)}
+						class="rounded-full p-2 text-white/70 transition-colors hover:bg-white/10 hover:text-white"
+					>
+						<LucideIcon name="x" size={20} />
+					</button>
+				</div>
+
+				<!-- Scrollable content area -->
+				<div class="scrollbar-hide flex flex-1 flex-col gap-2 overflow-y-auto px-4 py-6">
+					{#each [...catzipScenesMap[activeItem.id]].reverse() as scene}
+						<SleekButton
+							active={currentSceneId === scene.id}
+							onClick={() => switchToScene(scene.id)}
+						>
+							<div class="flex w-full items-center justify-between">
+								<span class="truncate">{scene.name || scene.id}</span>
+								{#if currentSceneId === scene.id}
+									<span
+										class="ml-2 h-1.5 w-1.5 shrink-0 rounded-full"
+										style="background-color: var(--primary-color); box-shadow: 0 0 8px var(--primary-color);"
+									></span>
+								{/if}
+							</div>
+						</SleekButton>
+					{/each}
+				</div>
+			</div>
+
+			<!-- Toggle button on the right if minimized -->
+			{#if isFloorsMenuMinimized}
+				<button
+					on:click={() => (isFloorsMenuMinimized = false)}
+					class="fixed right-4 top-1/2 z-[99999999999998] -translate-y-1/2 rounded-2xl border border-white/10 bg-[#0f1115]/60 p-3 text-white shadow-xl backdrop-blur-2xl transition-all hover:scale-105 hover:bg-white/10"
+				>
+					<LucideIcon name="menu" size={24} />
+				</button>
+			{/if}
+		{/if}
 	{/if}
 {/if}
 

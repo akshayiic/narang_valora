@@ -19,7 +19,7 @@
 		try {
 			console.log(`[ProjectLayout] Fetching config for ${org}/${prj} (${env})...`);
 			config = await fetchConfig(org, prj, env);
-			
+
 			if (config.theme?.fontUrl && config.theme?.fontName) {
 				const style = document.createElement('style');
 				style.textContent = `
@@ -58,7 +58,7 @@
 </script>
 
 <div
-	class="app h-screen w-screen flex flex-col bg-gray-900 text-white overflow-hidden relative"
+	class="app relative flex h-screen w-screen flex-col overflow-hidden bg-gray-900 text-white"
 	style:--primary-color={primaryColor}
 	style:--primary-color-light={primaryColorLight}
 >
@@ -67,7 +67,19 @@
 	{:else if error}
 		<div class="flex h-full w-full items-center justify-center text-red-500">{error}</div>
 	{:else}
-		<main class="flex-1 w-full h-full relative">
+		{#if $projectConfig?.projectLogo}
+			<a
+				href="/{$page.params.project}"
+				class="fixed right-6 top-6 z-[99999999] max-w-[120px] transition-transform duration-300 hover:scale-[1.02] sm:max-w-[150px] md:max-w-[180px]"
+			>
+				<img
+					src={$projectConfig.projectLogo}
+					alt="Project Logo"
+					class="h-auto max-h-[40px] w-full object-contain sm:max-h-[50px] md:max-h-[90px]"
+				/>
+			</a>
+		{/if}
+		<main class="relative h-full w-full flex-1">
 			<slot />
 		</main>
 	{/if}

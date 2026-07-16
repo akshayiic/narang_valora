@@ -20504,24 +20504,24 @@
 								if (t) throw t;
 								x(e);
 							});
-						
+
 						// Expose panorama select function to window for external use
-						window.selectPanorama = function(panorama) {
+						window.selectPanorama = function (panorama) {
 							if (panorama && w && typeof w._setSelected === 'function') {
 								w._setSelected(panorama);
 							}
 						};
-						
+
 						// When new image files are dropped, select latest panorama
 						var originalWAdd = w.push;
-						w.push = function() {
+						w.push = function () {
 							var result = originalWAdd.apply(this, arguments);
 							if (w.list.length > 0) {
 								window.selectPanorama(w.list.at(-1));
 							}
 							return result;
 						};
-						
+
 						var S = r.computed(function () {
 								return (
 									w.list.every(function (t) {
@@ -22505,8 +22505,8 @@
 								var n = t.data.zipFile;
 								e(null, n);
 								if (window.parent) {
-								  window.parent.postMessage({ type: 'zipDownloadComplete', zipFile: n }, '*');
-                };
+									window.parent.postMessage({ type: 'zipDownloadComplete', zipFile: n }, '*');
+								}
 								console.log('Zip file generated:', n);
 							}),
 								this._worker.postMessage({ cmd: 'generate', opts: t });

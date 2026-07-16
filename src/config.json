@@ -1,1460 +1,1537 @@
 {
-    "projectId": "6a3a73ebcece85666dce2d08",
-    "projectName": "Valora",
-    "description": "",
-    "orgId": "6a3a73e2cece85666dce2d05",
-    "orgName": "Narang",
-    "createdAt": "2026-06-23T11:54:19.012Z",
-    "updatedAt": "2026-07-15T14:49:53.101Z",
-    "overviewImages": {
-        "day": [
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/1.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/2.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/3.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/4.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/5.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/6.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/7.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/8.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/9.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/10.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/11.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/12.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/13.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/14.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/15.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/16.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/17.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/18.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/19.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/20.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/21.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/22.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/23.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/day/24.webp"
-        ],
-        "evening": [
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/1.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/2.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/3.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/4.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/5.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/6.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/7.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/8.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/9.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/10.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/11.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/12.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/13.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/14.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/15.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/16.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/17.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/18.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/19.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/20.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/21.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/22.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/23.webp",
-            "https://assets.vestate.io/webtool/narang/valora/overview/evening/24.webp"
-        ],
-        "initialStartIndexDay": 1,
-        "initialStartIndexNight": 1,
-        "reverseDay": false,
-        "reverseNight": false,
-        "defaultMode": "day"
-    },
-    "collabToolEnabled": true,
-    "sectionVisibility": {
-        "overview": false,
-        "amenities": true,
-        "brochure": true,
-        "vicinities": true,
-        "exterior": false,
-        "interiors": true
-    },
-    "brochureSection": {
-        "items": [
-            {
-                "id": "item-1783677805614",
-                "label": "Architect Testimonial",
-                "type": "video",
-                "category": "walkthrough",
-                "order": 1,
-                "assets": [
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Walkthrough/video/Architect Testimonial.mp4",
-                        "publicId": "asset-1783677902220-0",
-                        "format": "mp4",
-                        "size": 0,
-                        "order": 1
-                    }
-                ],
-                "createdAt": "2026-07-10T10:03:25.614Z",
-                "updatedAt": "2026-07-10T10:05:13.034Z"
-            },
-            {
-                "id": "item-1783677928343",
-                "label": "Narang Valora",
-                "type": "video",
-                "category": "walkthrough",
-                "order": 2,
-                "assets": [
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Walkthrough/video/Narang Valora.mp4",
-                        "publicId": "asset-1783677946760-0",
-                        "format": "mp4",
-                        "size": 0,
-                        "order": 1
-                    }
-                ],
-                "createdAt": "2026-07-10T10:05:28.343Z",
-                "updatedAt": "2026-07-13T14:50:36.453Z"
-            },
-            {
-                "id": "item-1783954246336",
-                "label": "Techbook",
-                "type": "image",
-                "category": "brochure",
-                "order": 3,
-                "assets": [
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-01.webp",
-                        "publicId": "asset-1783954315576-0",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 1,
-                        "pageNumber": 1
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-02.webp",
-                        "publicId": "asset-1783954315576-1",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 2,
-                        "pageNumber": 2
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-03.webp",
-                        "publicId": "asset-1783954315576-2",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 3,
-                        "pageNumber": 3
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-04.webp",
-                        "publicId": "asset-1783954315576-3",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 4,
-                        "pageNumber": 4
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-05.webp",
-                        "publicId": "asset-1783954315576-4",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 5,
-                        "pageNumber": 5
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-06.webp",
-                        "publicId": "asset-1783954315576-5",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 6,
-                        "pageNumber": 6
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-07.webp",
-                        "publicId": "asset-1783954315576-6",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 7,
-                        "pageNumber": 7
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-08.webp",
-                        "publicId": "asset-1783954315576-7",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 8,
-                        "pageNumber": 8
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-09.webp",
-                        "publicId": "asset-1783954315576-8",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 9,
-                        "pageNumber": 9
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-10.webp",
-                        "publicId": "asset-1783954315576-9",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 10,
-                        "pageNumber": 10
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-11.webp",
-                        "publicId": "asset-1783954315576-10",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 11,
-                        "pageNumber": 11
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-12.webp",
-                        "publicId": "asset-1783954315576-11",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 12,
-                        "pageNumber": 12
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-13.webp",
-                        "publicId": "asset-1783954315576-12",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 13,
-                        "pageNumber": 13
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-14.webp",
-                        "publicId": "asset-1783954315576-13",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 14,
-                        "pageNumber": 14
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-15.webp",
-                        "publicId": "asset-1783954315576-14",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 15,
-                        "pageNumber": 15
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-16.webp",
-                        "publicId": "asset-1783954315576-15",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 16,
-                        "pageNumber": 16
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-17.webp",
-                        "publicId": "asset-1783954315576-16",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 17,
-                        "pageNumber": 17
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-18.webp",
-                        "publicId": "asset-1783954315576-17",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 18,
-                        "pageNumber": 18
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-19.webp",
-                        "publicId": "asset-1783954315576-18",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 19,
-                        "pageNumber": 19
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-20.webp",
-                        "publicId": "asset-1783954315576-19",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 20,
-                        "pageNumber": 20
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-21.webp",
-                        "publicId": "asset-1783954315576-20",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 21,
-                        "pageNumber": 21
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-22.webp",
-                        "publicId": "asset-1783954315576-21",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 22,
-                        "pageNumber": 22
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-23.webp",
-                        "publicId": "asset-1783954315576-22",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 23,
-                        "pageNumber": 23
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-24.webp",
-                        "publicId": "asset-1783954315576-23",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 24,
-                        "pageNumber": 24
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-25.webp",
-                        "publicId": "asset-1783954315576-24",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 25,
-                        "pageNumber": 25
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-26.webp",
-                        "publicId": "asset-1783954315576-25",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 26,
-                        "pageNumber": 26
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-27.webp",
-                        "publicId": "asset-1783954315576-26",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 27,
-                        "pageNumber": 27
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-28.webp",
-                        "publicId": "asset-1783954315576-27",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 28,
-                        "pageNumber": 28
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-29.webp",
-                        "publicId": "asset-1783954315576-28",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 29,
-                        "pageNumber": 29
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-30.webp",
-                        "publicId": "asset-1783954315576-29",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 30,
-                        "pageNumber": 30
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-31.webp",
-                        "publicId": "asset-1783954315576-30",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 31,
-                        "pageNumber": 31
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-32.webp",
-                        "publicId": "asset-1783954315576-31",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 32,
-                        "pageNumber": 32
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-33.webp",
-                        "publicId": "asset-1783954315576-32",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 33,
-                        "pageNumber": 33
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-34.webp",
-                        "publicId": "asset-1783954315576-33",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 34,
-                        "pageNumber": 34
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-35.webp",
-                        "publicId": "asset-1783954315576-34",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 35,
-                        "pageNumber": 35
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-36.webp",
-                        "publicId": "asset-1783954315576-35",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 36,
-                        "pageNumber": 36
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-37.webp",
-                        "publicId": "asset-1783954315576-36",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 37,
-                        "pageNumber": 37
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-38.webp",
-                        "publicId": "asset-1783954315576-37",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 38,
-                        "pageNumber": 38
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-39.webp",
-                        "publicId": "asset-1783954315576-38",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 39,
-                        "pageNumber": 39
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-40.webp",
-                        "publicId": "asset-1783954315576-39",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 40,
-                        "pageNumber": 40
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-41.webp",
-                        "publicId": "asset-1783954315576-40",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 41,
-                        "pageNumber": 41
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-42.webp",
-                        "publicId": "asset-1783954315576-41",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 42,
-                        "pageNumber": 42
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-43.webp",
-                        "publicId": "asset-1783954315576-42",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 43,
-                        "pageNumber": 43
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-44.webp",
-                        "publicId": "asset-1783954315576-43",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 44,
-                        "pageNumber": 44
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-45.webp",
-                        "publicId": "asset-1783954315576-44",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 45,
-                        "pageNumber": 45
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-46.webp",
-                        "publicId": "asset-1783954315576-45",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 46,
-                        "pageNumber": 46
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-47.webp",
-                        "publicId": "asset-1783954315576-46",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 47,
-                        "pageNumber": 47
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-48.webp",
-                        "publicId": "asset-1783954315576-47",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 48,
-                        "pageNumber": 48
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-49.webp",
-                        "publicId": "asset-1783954315576-48",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 49,
-                        "pageNumber": 49
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-50.webp",
-                        "publicId": "asset-1783954315576-49",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 50,
-                        "pageNumber": 50
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-51.webp",
-                        "publicId": "asset-1783954315576-50",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 51,
-                        "pageNumber": 51
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-52.webp",
-                        "publicId": "asset-1783954315576-51",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 52,
-                        "pageNumber": 52
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-53.webp",
-                        "publicId": "asset-1783954315576-52",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 53,
-                        "pageNumber": 53
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-54.webp",
-                        "publicId": "asset-1783954315576-53",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 54,
-                        "pageNumber": 54
-                    },
-                    {
-                        "url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-55.webp",
-                        "publicId": "asset-1783954315576-54",
-                        "format": "webp",
-                        "size": 0,
-                        "order": 55,
-                        "pageNumber": 55
-                    }
-                ],
-                "createdAt": "2026-07-13T14:50:46.336Z",
-                "updatedAt": "2026-07-13T14:51:59.891Z"
-            }
-        ]
-    },
-    "vicinities": {
-        "day": [
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/1.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/2.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/3.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/4.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/5.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/6.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/7.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/8.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/9.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/10.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/11.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/12.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/13.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/14.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/15.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/16.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/17.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/18.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/19.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/20.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/21.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/22.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/23.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/day/24.webp"
-        ],
-        "evening": [
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/1.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/2.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/3.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/4.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/5.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/6.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/7.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/8.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/9.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/10.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/11.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/12.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/13.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/14.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/15.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/16.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/17.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/18.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/19.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/20.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/21.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/22.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/23.webp",
-            "https://assets.vestate.io/webtool/narang/valora/vicinities/evening/24.webp"
-        ],
-        "initialStartIndexDay": 1,
-        "initialStartIndexNight": 1,
-        "categories": [
-            {
-                "id": "vicinity-category-1783509203452",
-                "name": "Access Roads",
-                "images": [
-                    {
-                        "title": "Maharaja Agrasen Marg",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Access Roads/Maharaja Agrasen Marg.webp"
-                    },
-                    {
-                        "title": "Sri Gayaprasad Dhanuka Marg",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Access Roads/Sri Gayaprasad Dhanuka Marg.webp"
-                    },
-                    {
-                        "title": "Swami Ayappa Temple Marg",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Access Roads/Swami Ayappa Temple Marg.webp"
-                    }
-                ],
-                "order": 1
-            },
-            {
-                "id": "vicinity-category-1783509226836",
-                "name": "Banks",
-                "images": [
-                    {
-                        "title": "Axis Bank",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/Axis Bank.webp"
-                    },
-                    {
-                        "title": "Bank of Baroda",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/Bank of Baroda.webp"
-                    },
-                    {
-                        "title": "Bank of Maharshtra",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/Bank of Maharshtra.webp"
-                    },
-                    {
-                        "title": "HDFC Bank",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/HDFC Bank.webp"
-                    },
-                    {
-                        "title": "ICICI Bank",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/ICICI Bank.webp"
-                    },
-                    {
-                        "title": "Kotak mahindra Bank",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/Kotak mahindra Bank.webp"
-                    },
-                    {
-                        "title": "RBL Bank",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/RBL Bank.webp"
-                    },
-                    {
-                        "title": "State Bank of India",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/State Bank of India.webp"
-                    },
-                    {
-                        "title": "SVC Bank",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/SVC Bank.webp"
-                    }
-                ],
-                "order": 2
-            },
-            {
-                "id": "vicinity-category-1783509244237",
-                "name": "Business Districts",
-                "images": [
-                    {
-                        "title": "Mindspace",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Business Districts/Mindspace.webp"
-                    },
-                    {
-                        "title": "NESCO",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Business Districts/NESCO.webp"
-                    },
-                    {
-                        "title": "Nirlon Knowledge Park",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Business Districts/Nirlon Knowledge Park.webp"
-                    },
-                    {
-                        "title": "Oberoi Commerz II",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Business Districts/Oberoi Commerz II.webp"
-                    }
-                ],
-                "order": 3
-            },
-            {
-                "id": "vicinity-category-1783509266836",
-                "name": "Connectivity",
-                "images": [
-                    {
-                        "title": "Bangur Nagar Metro STation",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Bangur Nagar Metro STation.webp"
-                    },
-                    {
-                        "title": "Bangur Nagar Police Chowky",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Bangur Nagar Police Chowky.webp"
-                    },
-                    {
-                        "title": "Coastal Road",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Coastal Road.webp"
-                    },
-                    {
-                        "title": "CSMIA T1",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/CSMIA T1.webp"
-                    },
-                    {
-                        "title": "CSMIA T2",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/CSMIA T2.webp"
-                    },
-                    {
-                        "title": "DN Nagar Metro Line 2B",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/DN Nagar Metro Line 2B.webp"
-                    },
-                    {
-                        "title": "Goregaon Mulund Link Road",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Goregaon Mulund Link Road.webp"
-                    },
-                    {
-                        "title": "Goregaon Railway Station",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Goregaon Railway Station.webp"
-                    },
-                    {
-                        "title": "Malad Railway Station",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Malad Railway Station.webp"
-                    },
-                    {
-                        "title": "Malad to Versova Connector",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Malad to Versova Connector.webp"
-                    },
-                    {
-                        "title": "Navi Mumbai Int Airport",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Navi Mumbai Int Airport.webp"
-                    },
-                    {
-                        "title": "Ram Mandir Station",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Ram Mandir Station.webp"
-                    },
-                    {
-                        "title": "Swami Samarth Nagar Metro Station",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Swami Samarth Nagar Metro Station.webp"
-                    }
-                ],
-                "order": 4
-            },
-            {
-                "id": "vicinity-category-1783517954876",
-                "name": "Education",
-                "images": [
-                    {
-                        "title": "Amity Global Business School",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Amity Global Business School.webp"
-                    },
-                    {
-                        "title": "Aquinas International School",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Aquinas International School.webp"
-                    },
-                    {
-                        "title": "Bhavans College",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Bhavans College.webp"
-                    },
-                    {
-                        "title": "Eurokids Preschool",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Eurokids Preschool.webp"
-                    },
-                    {
-                        "title": "Hello Kids Preschool",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Hello Kids Preschool.webp"
-                    },
-                    {
-                        "title": "Kangaroo Kids Preschool",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Kangaroo Kids Preschool.webp"
-                    },
-                    {
-                        "title": "Little Millenium Preschool",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Little Millenium Preschool.webp"
-                    },
-                    {
-                        "title": "Mithibai College",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Mithibai College.webp"
-                    },
-                    {
-                        "title": "Narsee Monjee",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Narsee Monjee.webp"
-                    },
-                    {
-                        "title": "NMIMS",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/NMIMS.webp"
-                    },
-                    {
-                        "title": "Oberoi International School",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Oberoi International School.webp"
-                    },
-                    {
-                        "title": "Podar Jumbo Kids",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Podar Jumbo Kids.webp"
-                    },
-                    {
-                        "title": "SP Jain",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/SP Jain.webp"
-                    },
-                    {
-                        "title": "Stellar World",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Stellar World.webp"
-                    },
-                    {
-                        "title": "VIBGYOR High School",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/VIBGYOR High School.webp"
-                    },
-                    {
-                        "title": "Witty International School",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Witty International School.webp"
-                    }
-                ],
-                "order": 5
-            },
-            {
-                "id": "vicinity-category-1783517990339",
-                "name": "Hospitals",
-                "images": [
-                    {
-                        "title": "Cloudnine Hosp",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Hospitals/Cloudnine Hosp.webp"
-                    },
-                    {
-                        "title": "Kapadia multispecialty ",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Hospitals/Kapadia multispecialty .webp"
-                    },
-                    {
-                        "title": "Kokilaben Dhirubai Ambani",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Hospitals/Kokilaben Dhirubai Ambani.webp"
-                    },
-                    {
-                        "title": "Lifeline Medicare Hosp",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Hospitals/Lifeline Medicare Hosp.webp"
-                    },
-                    {
-                        "title": "Oscar super speciality Hosp",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Hospitals/Oscar super speciality Hosp.webp"
-                    },
-                    {
-                        "title": "SRV Hosp",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Hospitals/SRV Hosp.webp"
-                    }
-                ],
-                "order": 6
-            },
-            {
-                "id": "vicinity-category-1783518018627",
-                "name": "Lifestyle",
-                "images": [
-                    {
-                        "title": "Baliboo",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Baliboo.webp"
-                    },
-                    {
-                        "title": "Bayroute",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Bayroute.webp"
-                    },
-                    {
-                        "title": "Blue Tokai Cafe ",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Blue Tokai Cafe .webp"
-                    },
-                    {
-                        "title": "Boneto Fine Dine",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Boneto Fine Dine.webp"
-                    },
-                    {
-                        "title": "Coffee By Di Bella",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Coffee By Di Bella.webp"
-                    },
-                    {
-                        "title": "Emearald",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Emearald.webp"
-                    },
-                    {
-                        "title": "Evershine Mall",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Evershine Mall.webp"
-                    },
-                    {
-                        "title": "Fleur",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Fleur.webp"
-                    },
-                    {
-                        "title": "FOO",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/FOO.webp"
-                    },
-                    {
-                        "title": "Goregaon Sports Club",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Goregaon Sports Club.webp"
-                    },
-                    {
-                        "title": "Infiniti 2 Mall",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Infiniti 2 Mall.webp"
-                    },
-                    {
-                        "title": "Inorbit Mall",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Inorbit Mall.webp"
-                    },
-                    {
-                        "title": "INOX megaplex",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/INOX megaplex.webp"
-                    },
-                    {
-                        "title": "Musafeer Radison",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Musafeer Radison.webp"
-                    },
-                    {
-                        "title": "Oberoi Mall",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Oberoi Mall.webp"
-                    },
-                    {
-                        "title": "Poetry",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Poetry.webp"
-                    },
-                    {
-                        "title": "PVR Icon",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/PVR Icon.webp"
-                    },
-                    {
-                        "title": "PVR ICON - Oberoi Mall",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/PVR ICON - Oberoi Mall.webp"
-                    },
-                    {
-                        "title": "PVR Infinity Mall",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/PVR Infinity Mall.webp"
-                    },
-                    {
-                        "title": "Radison Hotel",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Radison Hotel.webp"
-                    },
-                    {
-                        "title": "Sage Cafe",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Sage Cafe.webp"
-                    },
-                    {
-                        "title": "Sante Spa",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Sante Spa.webp"
-                    },
-                    {
-                        "title": "Sozo ",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Sozo .webp"
-                    },
-                    {
-                        "title": "Starbuck",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Starbuck.webp"
-                    },
-                    {
-                        "title": "The Fern",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/The Fern.webp"
-                    },
-                    {
-                        "title": "The Westin",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/The Westin.webp"
-                    },
-                    {
-                        "title": "Trnto Dining",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Trnto Dining.webp"
-                    }
-                ],
-                "order": 7
-            },
-            {
-                "id": "vicinity-category-1783518116003",
-                "name": "Places of Worship",
-                "images": [
-                    {
-                        "title": "Ambe Mata",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Ambe Mata.webp"
-                    },
-                    {
-                        "title": "ISKCIN",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/ISKCIN.webp"
-                    },
-                    {
-                        "title": "Jain Mandir",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Jain Mandir.webp"
-                    },
-                    {
-                        "title": "Mahalaxmi Mandir",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Mahalaxmi Mandir.webp"
-                    },
-                    {
-                        "title": "Shri Ayappa",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Shri Ayappa.webp"
-                    },
-                    {
-                        "title": "Shri Ichhapurti",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Shri Ichhapurti.webp"
-                    },
-                    {
-                        "title": "Shri Ram Mandir",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Shri Ram Mandir.webp"
-                    },
-                    {
-                        "title": "Suvarnakavach",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Suvarnakavach.webp"
-                    },
-                    {
-                        "title": "Umiyadham",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Umiyadham.webp"
-                    },
-                    {
-                        "title": "Vishwamohini",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Vishwamohini.webp"
-                    }
-                ],
-                "order": 8
-            },
-            {
-                "id": "vicinity-category-1783518155315",
-                "name": "Retail",
-                "images": [
-                    {
-                        "title": "BMW Showroom",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/BMW Showroom.webp"
-                    },
-                    {
-                        "title": "Croma",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/Croma.webp"
-                    },
-                    {
-                        "title": "D Mart",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/D Mart.webp"
-                    },
-                    {
-                        "title": "Hi Life Mart",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/Hi Life Mart.webp"
-                    },
-                    {
-                        "title": "Hyundai Showroom",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/Hyundai Showroom.webp"
-                    },
-                    {
-                        "title": "Kia Showroom",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/Kia Showroom.webp"
-                    },
-                    {
-                        "title": "MG Motors",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/MG Motors.webp"
-                    },
-                    {
-                        "title": "TATA Showroom",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/TATA Showroom.webp"
-                    },
-                    {
-                        "title": "Vijay Sales",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/Vijay Sales.webp"
-                    },
-                    {
-                        "title": "Westside",
-                        "image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/Westside.webp"
-                    }
-                ],
-                "order": 9
-            }
-        ],
-        "reverseDay": false,
-        "reverseNight": false,
-        "defaultMode": "day"
-    },
-    "exterior": {
-        "categories": []
-    },
-    "amenities": {
-        "categories": [
-            {
-                "id": "amenity-category-1783508987692",
-                "name": "Ground Amenities",
-                "zipUrl": "https://assets.vestate.io/webtool/narang/valora/amenities/Ground Amenities",
-                "order": 1
-            },
-            {
-                "id": "amenity-category-1783509003548",
-                "name": "Podium Level Amenities",
-                "zipUrl": "https://assets.vestate.io/webtool/narang/valora/amenities/Podium Level Amenities",
-                "order": 2
-            },
-            {
-                "id": "amenity-category-1784115558257",
-                "name": "Club Valora",
-                "zipUrl": "https://assets.vestate.io/webtool/narang/valora/amenities/Club Valora",
-                "order": 3
-            }
-        ]
-    },
-    "interiors": {
-        "categories": [
-            {
-                "id": "interior-category-1783344069559",
-                "name": "3 BHK Unit",
-                "dollhouseImage": "https://assets.vestate.io/webtool/narang/valora/interiors/3Bhk Unit/dollhouse/3bhk-dollhouse.webp",
-                "zipUrl": "https://assets.vestate.io/webtool/narang/valora/interiors/3Bhk Unit",
-                "order": 1
-            },
-            {
-                "id": "interior-category-1783509090028",
-                "name": "4 BHK Unit",
-                "dollhouseImage": "https://assets.vestate.io/webtool/narang/valora/interiors/4 BHK Unit/dollhouse/4bhk.webp",
-                "zipUrl": "https://assets.vestate.io/webtool/narang/valora/interiors/4 BHK Unit",
-                "order": 2
-            },
-            {
-                "id": "interior-category-1783509104620",
-                "name": "Jodi Flat",
-                "dollhouseImage": "https://assets.vestate.io/webtool/narang/valora/interiors/Jodi Flat/dollhouse/jodi.webp",
-                "zipUrl": "https://assets.vestate.io/webtool/narang/valora/interiors/Jodi Flat",
-                "order": 3
-            }
-        ]
-    },
-    "introVideo": "",
-    "customSections": [
-        {
-            "id": "custom-section-1783424166204",
-            "name": "Techbook",
-            "enabled": false,
-            "mode": "pages",
-            "images": [
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-01.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-02.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-03.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-04.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-05.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-06.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-07.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-08.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-09.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-10.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-11.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-12.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-13.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-14.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-15.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-16.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-17.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-18.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-19.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-20.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-21.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-22.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-23.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-24.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-25.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-26.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-27.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-28.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-29.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-30.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-31.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-32.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-33.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-34.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-35.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-36.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-37.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-38.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-39.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-40.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-41.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-42.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-43.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-44.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-45.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-46.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-47.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-48.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-49.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-50.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-51.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-52.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-53.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-54.webp",
-                "https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-55.webp"
-            ],
-            "icon": "notebook-pen"
-        },
-        {
-            "id": "custom-section-1783512087579",
-            "name": "Master Plan",
-            "enabled": true,
-            "mode": "single",
-            "images": [],
-            "icon": "layers-2",
-            "image": "https://assets.vestate.io/webtool/narang/valora/custom/Master Plan/valora_site.webp"
-        },
-        {
-            "id": "custom-section-1783519593944",
-            "name": "Layout",
-            "enabled": true,
-            "mode": "dropdown",
-            "images": [
-                {
-                    "title": "Jodi Floor Plan",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Jodi Floor Plan.webp"
-                },
-                {
-                    "title": "Refuge Floor Plan 6th Floor",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Refuge Floor Plan 6th Floor.webp"
-                },
-                {
-                    "title": "Refuge Floor Plan 13th & 27th Floor",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Refuge Floor Plan 13th & 27th Floor.webp"
-                },
-                {
-                    "title": "Refuge Floor Plan 20th & 34th Floor",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Refuge Floor Plan 20th & 34th Floor.webp"
-                },
-                {
-                    "title": "Refuge Floor Plan 41st Floor",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Refuge Floor Plan 41st Floor.webp"
-                },
-                {
-                    "title": "Typical Floor Plan",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Typical Floor Plan.webp"
-                },
-                {
-                    "title": "Unit 1",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 1.webp"
-                },
-                {
-                    "title": "Unit 2",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 2.webp"
-                },
-                {
-                    "title": "Unit 3",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 3.webp"
-                },
-                {
-                    "title": "Unit 4",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 4.webp"
-                },
-                {
-                    "title": "Unit 5",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 5.webp"
-                },
-                {
-                    "title": "Unit 6",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 6.webp"
-                },
-                {
-                    "title": "Unit 7",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 7.webp"
-                },
-                {
-                    "title": "Unit 07 5.5BHK Duplex Lower Level",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 07 5.5BHK Duplex Lower Level.webp"
-                },
-                {
-                    "title": "Unit 07 5.5BHK Duplex Upper Level",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 07 5.5BHK Duplex Upper Level.webp"
-                },
-                {
-                    "title": "Valora Duplex 4k-01.jpg",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Valora Duplex 4k-01.jpg.webp"
-                },
-                {
-                    "title": "Valora Duplex 4k-02.jpg",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Valora Duplex 4k-02.jpg.webp"
-                },
-                {
-                    "title": "Valora Duplex 4k-03.jpg",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Valora Duplex 4k-03.jpg.webp"
-                },
-                {
-                    "title": "Valora Duplex 4k-04.jpg",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Valora Duplex 4k-04.jpg.webp"
-                },
-                {
-                    "title": "Valora Duplex 4k-05.jpg",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Valora Duplex 4k-05.jpg.webp"
-                },
-                {
-                    "title": "Valora Duplex 4k-06.jpg",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Valora Duplex 4k-06.jpg.webp"
-                },
-                {
-                    "title": "Unit 05-06 6BHK Duplex Lower Level",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 05-06 6BHK Duplex Lower Level.webp"
-                },
-                {
-                    "title": "Unit 05-06 6BHK Duplex Upper Level",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 05-06 6BHK Duplex Upper Level.webp"
-                },
-                {
-                    "title": "Unit 01 -02 6BHK Duplex Lower Level",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 01 -02 6BHK Duplex Lower Level.webp"
-                },
-                {
-                    "title": "Unit 01-02 6BHK Duplex Upper Level",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 01-02 6BHK Duplex Upper Level.webp"
-                },
-                {
-                    "title": "Jodi Unit 1-2 4BHK Jodi",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Jodi Unit 1-2 4BHK Jodi.webp"
-                },
-                {
-                    "title": "Jodi Unit 5-6 5BHK Jodi",
-                    "image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Jodi Unit 5-6 5BHK Jodi.webp"
-                }
-            ],
-            "icon": "layout-dashboard"
-        },
-        {
-            "id": "custom-section-1783942570148",
-            "name": "Overview",
-            "enabled": true,
-            "mode": "dayNightPlus",
-            "images": [],
-            "dayNight": {
-                "day": [
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/1.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/2.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/3.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/4.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/5.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/6.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/7.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/8.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/9.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/10.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/11.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/12.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/13.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/14.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/15.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/16.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/17.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/18.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/19.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/20.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/21.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/22.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/23.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/24.webp"
-                ],
-                "evening": [
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/1.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/2.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/3.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/4.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/5.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/6.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/7.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/8.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/9.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/10.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/11.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/12.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/13.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/14.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/15.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/16.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/17.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/18.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/19.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/20.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/21.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/22.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/23.webp",
-                    "https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/24.webp"
-                ],
-                "initialStartIndexDay": 1,
-                "initialStartIndexNight": 1
-            },
-            "catzipHeadName": "Drone Shots",
-            "catzip": [
-                {
-                    "id": "catzip-category-1783943074714",
-                    "name": "",
-                    "zipUrl": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catzipdroneshots",
-                    "order": 1
-                }
-            ],
-            "catzipHeadIcon": "drone",
-            "catstatHeadName": "Renders",
-            "catstat": [
-                {
-                    "id": "catstat-category-1783951309759",
-                    "name": "",
-                    "images": [
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Badminton_Piclkleball court.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/balcony1.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/balcony2.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/balcony3.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Banquet 300 01.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/bedroom.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Bussines Center.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/FRONT FACEING.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Gym 300 01.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Indoor Games 300 01.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Kids Creche.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/living1.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/living2.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Lobby 300 01.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Lounge 300 01.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Lounge 300 02.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Front View.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/outdoor_lawn.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/salon.webp",
-                        "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Yoga 300 01.webp"
-                    ],
-                    "order": 1
-                }
-            ],
-            "imageFit": "cover",
-            "catstatHeadIcon": "images",
-            "icon": "sparkles"
-        }
-    ],
-    "theme": {
-        "primaryColor": "#3da8cd",
-        "secondaryColor": "#2596be",
-        "fontUrl": "",
-        "fontName": "",
-        "borderRadius": 8
-    },
-    "projectLogo": "https://assets.vestate.io/webtool/narang/valora/valora.webp",
-    "orgLogo": "https://assets.vestate.io/webtool/narang/narang.webp",
-    "introImage": "https://assets.vestate.io/webtool/narang/valora/intro/image/NARANG FRONT VIEW_1_FINAL.webp",
-    "vstateWatermark": false,
-    "collabToolProjectIdStaging": "PR-3pkCYMUYXrGznjEQywhZDAgyg",
-    "sectionOrder": [
-        "custom:custom-section-1783942570148",
-        "vicinities",
-        "amenities",
-        "interiors",
-        "brochure",
-        "custom:custom-section-1783512087579",
-        "custom:custom-section-1783519593944"
-    ],
-    "sectionAliases": {
-        "amenities": "",
-        "brochure": "Collateral"
-    },
-    "navStyle": "sidebar"
-
+	"projectId": "6a3a73ebcece85666dce2d08",
+	"projectName": "Valora",
+	"description": "",
+	"orgId": "6a3a73e2cece85666dce2d05",
+	"orgName": "Narang",
+	"createdAt": "2026-06-23T11:54:19.012Z",
+	"updatedAt": "2026-07-15T14:49:53.101Z",
+	"overviewImages": {
+		"day": [
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/1.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/2.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/3.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/4.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/5.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/6.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/7.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/8.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/9.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/10.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/11.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/12.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/13.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/14.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/15.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/16.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/17.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/18.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/19.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/20.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/21.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/22.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/23.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/day/24.webp"
+		],
+		"evening": [
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/1.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/2.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/3.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/4.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/5.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/6.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/7.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/8.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/9.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/10.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/11.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/12.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/13.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/14.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/15.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/16.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/17.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/18.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/19.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/20.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/21.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/22.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/23.webp",
+			"https://assets.vestate.io/webtool/narang/valora/overview/evening/24.webp"
+		],
+		"initialStartIndexDay": 1,
+		"initialStartIndexNight": 1,
+		"reverseDay": false,
+		"reverseNight": false,
+		"defaultMode": "day"
+	},
+	"collabToolEnabled": true,
+	"sectionVisibility": {
+		"overview": false,
+		"amenities": true,
+		"brochure": true,
+		"vicinities": true,
+		"exterior": false,
+		"interiors": true
+	},
+	"brochureSection": {
+		"items": [
+			{
+				"id": "item-1783677805614",
+				"label": "Architect Testimonial",
+				"type": "video",
+				"category": "walkthrough",
+				"order": 1,
+				"assets": [
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Walkthrough/video/Architect Testimonial.mp4",
+						"publicId": "asset-1783677902220-0",
+						"format": "mp4",
+						"size": 0,
+						"order": 1
+					}
+				],
+				"createdAt": "2026-07-10T10:03:25.614Z",
+				"updatedAt": "2026-07-10T10:05:13.034Z"
+			},
+			{
+				"id": "item-1783677928343",
+				"label": "Narang Valora",
+				"type": "video",
+				"category": "walkthrough",
+				"order": 2,
+				"assets": [
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Walkthrough/video/Narang Valora.mp4",
+						"publicId": "asset-1783677946760-0",
+						"format": "mp4",
+						"size": 0,
+						"order": 1
+					}
+				],
+				"createdAt": "2026-07-10T10:05:28.343Z",
+				"updatedAt": "2026-07-13T14:50:36.453Z"
+			},
+			{
+				"id": "item-1783954246336",
+				"label": "Techbook",
+				"type": "image",
+				"category": "brochure",
+				"order": 3,
+				"assets": [
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-01.webp",
+						"publicId": "asset-1783954315576-0",
+						"format": "webp",
+						"size": 0,
+						"order": 1,
+						"pageNumber": 1
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-02.webp",
+						"publicId": "asset-1783954315576-1",
+						"format": "webp",
+						"size": 0,
+						"order": 2,
+						"pageNumber": 2
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-03.webp",
+						"publicId": "asset-1783954315576-2",
+						"format": "webp",
+						"size": 0,
+						"order": 3,
+						"pageNumber": 3
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-04.webp",
+						"publicId": "asset-1783954315576-3",
+						"format": "webp",
+						"size": 0,
+						"order": 4,
+						"pageNumber": 4
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-05.webp",
+						"publicId": "asset-1783954315576-4",
+						"format": "webp",
+						"size": 0,
+						"order": 5,
+						"pageNumber": 5
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-06.webp",
+						"publicId": "asset-1783954315576-5",
+						"format": "webp",
+						"size": 0,
+						"order": 6,
+						"pageNumber": 6
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-07.webp",
+						"publicId": "asset-1783954315576-6",
+						"format": "webp",
+						"size": 0,
+						"order": 7,
+						"pageNumber": 7
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-08.webp",
+						"publicId": "asset-1783954315576-7",
+						"format": "webp",
+						"size": 0,
+						"order": 8,
+						"pageNumber": 8
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-09.webp",
+						"publicId": "asset-1783954315576-8",
+						"format": "webp",
+						"size": 0,
+						"order": 9,
+						"pageNumber": 9
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-10.webp",
+						"publicId": "asset-1783954315576-9",
+						"format": "webp",
+						"size": 0,
+						"order": 10,
+						"pageNumber": 10
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-11.webp",
+						"publicId": "asset-1783954315576-10",
+						"format": "webp",
+						"size": 0,
+						"order": 11,
+						"pageNumber": 11
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-12.webp",
+						"publicId": "asset-1783954315576-11",
+						"format": "webp",
+						"size": 0,
+						"order": 12,
+						"pageNumber": 12
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-13.webp",
+						"publicId": "asset-1783954315576-12",
+						"format": "webp",
+						"size": 0,
+						"order": 13,
+						"pageNumber": 13
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-14.webp",
+						"publicId": "asset-1783954315576-13",
+						"format": "webp",
+						"size": 0,
+						"order": 14,
+						"pageNumber": 14
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-15.webp",
+						"publicId": "asset-1783954315576-14",
+						"format": "webp",
+						"size": 0,
+						"order": 15,
+						"pageNumber": 15
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-16.webp",
+						"publicId": "asset-1783954315576-15",
+						"format": "webp",
+						"size": 0,
+						"order": 16,
+						"pageNumber": 16
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-17.webp",
+						"publicId": "asset-1783954315576-16",
+						"format": "webp",
+						"size": 0,
+						"order": 17,
+						"pageNumber": 17
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-18.webp",
+						"publicId": "asset-1783954315576-17",
+						"format": "webp",
+						"size": 0,
+						"order": 18,
+						"pageNumber": 18
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-19.webp",
+						"publicId": "asset-1783954315576-18",
+						"format": "webp",
+						"size": 0,
+						"order": 19,
+						"pageNumber": 19
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-20.webp",
+						"publicId": "asset-1783954315576-19",
+						"format": "webp",
+						"size": 0,
+						"order": 20,
+						"pageNumber": 20
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-21.webp",
+						"publicId": "asset-1783954315576-20",
+						"format": "webp",
+						"size": 0,
+						"order": 21,
+						"pageNumber": 21
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-22.webp",
+						"publicId": "asset-1783954315576-21",
+						"format": "webp",
+						"size": 0,
+						"order": 22,
+						"pageNumber": 22
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-23.webp",
+						"publicId": "asset-1783954315576-22",
+						"format": "webp",
+						"size": 0,
+						"order": 23,
+						"pageNumber": 23
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-24.webp",
+						"publicId": "asset-1783954315576-23",
+						"format": "webp",
+						"size": 0,
+						"order": 24,
+						"pageNumber": 24
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-25.webp",
+						"publicId": "asset-1783954315576-24",
+						"format": "webp",
+						"size": 0,
+						"order": 25,
+						"pageNumber": 25
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-26.webp",
+						"publicId": "asset-1783954315576-25",
+						"format": "webp",
+						"size": 0,
+						"order": 26,
+						"pageNumber": 26
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-27.webp",
+						"publicId": "asset-1783954315576-26",
+						"format": "webp",
+						"size": 0,
+						"order": 27,
+						"pageNumber": 27
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-28.webp",
+						"publicId": "asset-1783954315576-27",
+						"format": "webp",
+						"size": 0,
+						"order": 28,
+						"pageNumber": 28
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-29.webp",
+						"publicId": "asset-1783954315576-28",
+						"format": "webp",
+						"size": 0,
+						"order": 29,
+						"pageNumber": 29
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-30.webp",
+						"publicId": "asset-1783954315576-29",
+						"format": "webp",
+						"size": 0,
+						"order": 30,
+						"pageNumber": 30
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-31.webp",
+						"publicId": "asset-1783954315576-30",
+						"format": "webp",
+						"size": 0,
+						"order": 31,
+						"pageNumber": 31
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-32.webp",
+						"publicId": "asset-1783954315576-31",
+						"format": "webp",
+						"size": 0,
+						"order": 32,
+						"pageNumber": 32
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-33.webp",
+						"publicId": "asset-1783954315576-32",
+						"format": "webp",
+						"size": 0,
+						"order": 33,
+						"pageNumber": 33
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-34.webp",
+						"publicId": "asset-1783954315576-33",
+						"format": "webp",
+						"size": 0,
+						"order": 34,
+						"pageNumber": 34
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-35.webp",
+						"publicId": "asset-1783954315576-34",
+						"format": "webp",
+						"size": 0,
+						"order": 35,
+						"pageNumber": 35
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-36.webp",
+						"publicId": "asset-1783954315576-35",
+						"format": "webp",
+						"size": 0,
+						"order": 36,
+						"pageNumber": 36
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-37.webp",
+						"publicId": "asset-1783954315576-36",
+						"format": "webp",
+						"size": 0,
+						"order": 37,
+						"pageNumber": 37
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-38.webp",
+						"publicId": "asset-1783954315576-37",
+						"format": "webp",
+						"size": 0,
+						"order": 38,
+						"pageNumber": 38
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-39.webp",
+						"publicId": "asset-1783954315576-38",
+						"format": "webp",
+						"size": 0,
+						"order": 39,
+						"pageNumber": 39
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-40.webp",
+						"publicId": "asset-1783954315576-39",
+						"format": "webp",
+						"size": 0,
+						"order": 40,
+						"pageNumber": 40
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-41.webp",
+						"publicId": "asset-1783954315576-40",
+						"format": "webp",
+						"size": 0,
+						"order": 41,
+						"pageNumber": 41
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-42.webp",
+						"publicId": "asset-1783954315576-41",
+						"format": "webp",
+						"size": 0,
+						"order": 42,
+						"pageNumber": 42
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-43.webp",
+						"publicId": "asset-1783954315576-42",
+						"format": "webp",
+						"size": 0,
+						"order": 43,
+						"pageNumber": 43
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-44.webp",
+						"publicId": "asset-1783954315576-43",
+						"format": "webp",
+						"size": 0,
+						"order": 44,
+						"pageNumber": 44
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-45.webp",
+						"publicId": "asset-1783954315576-44",
+						"format": "webp",
+						"size": 0,
+						"order": 45,
+						"pageNumber": 45
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-46.webp",
+						"publicId": "asset-1783954315576-45",
+						"format": "webp",
+						"size": 0,
+						"order": 46,
+						"pageNumber": 46
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-47.webp",
+						"publicId": "asset-1783954315576-46",
+						"format": "webp",
+						"size": 0,
+						"order": 47,
+						"pageNumber": 47
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-48.webp",
+						"publicId": "asset-1783954315576-47",
+						"format": "webp",
+						"size": 0,
+						"order": 48,
+						"pageNumber": 48
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-49.webp",
+						"publicId": "asset-1783954315576-48",
+						"format": "webp",
+						"size": 0,
+						"order": 49,
+						"pageNumber": 49
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-50.webp",
+						"publicId": "asset-1783954315576-49",
+						"format": "webp",
+						"size": 0,
+						"order": 50,
+						"pageNumber": 50
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-51.webp",
+						"publicId": "asset-1783954315576-50",
+						"format": "webp",
+						"size": 0,
+						"order": 51,
+						"pageNumber": 51
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-52.webp",
+						"publicId": "asset-1783954315576-51",
+						"format": "webp",
+						"size": 0,
+						"order": 52,
+						"pageNumber": 52
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-53.webp",
+						"publicId": "asset-1783954315576-52",
+						"format": "webp",
+						"size": 0,
+						"order": 53,
+						"pageNumber": 53
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-54.webp",
+						"publicId": "asset-1783954315576-53",
+						"format": "webp",
+						"size": 0,
+						"order": 54,
+						"pageNumber": 54
+					},
+					{
+						"url": "https://assets.vestate.io/webtool/narang/valora/brochure/Brochure/assets/VTB-55.webp",
+						"publicId": "asset-1783954315576-54",
+						"format": "webp",
+						"size": 0,
+						"order": 55,
+						"pageNumber": 55
+					}
+				],
+				"createdAt": "2026-07-13T14:50:46.336Z",
+				"updatedAt": "2026-07-13T14:51:59.891Z"
+			}
+		]
+	},
+	"vicinities": {
+		"day": [
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/1.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/2.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/3.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/4.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/5.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/6.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/7.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/8.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/9.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/10.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/11.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/12.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/13.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/14.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/15.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/16.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/17.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/18.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/19.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/20.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/21.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/22.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/23.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/day/24.webp"
+		],
+		"evening": [
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/1.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/2.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/3.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/4.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/5.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/6.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/7.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/8.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/9.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/10.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/11.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/12.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/13.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/14.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/15.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/16.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/17.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/18.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/19.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/20.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/21.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/22.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/23.webp",
+			"https://assets.vestate.io/webtool/narang/valora/vicinities/evening/24.webp"
+		],
+		"initialStartIndexDay": 1,
+		"initialStartIndexNight": 1,
+		"categories": [
+			{
+				"id": "vicinity-category-1783509203452",
+				"name": "Access Roads",
+				"images": [
+					{
+						"title": "Maharaja Agrasen Marg",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Access Roads/Maharaja Agrasen Marg.webp"
+					},
+					{
+						"title": "Sri Gayaprasad Dhanuka Marg",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Access Roads/Sri Gayaprasad Dhanuka Marg.webp"
+					},
+					{
+						"title": "Swami Ayappa Temple Marg",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Access Roads/Swami Ayappa Temple Marg.webp"
+					}
+				],
+				"order": 1
+			},
+			{
+				"id": "vicinity-category-1783509226836",
+				"name": "Banks",
+				"images": [
+					{
+						"title": "Axis Bank",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/Axis Bank.webp"
+					},
+					{
+						"title": "Bank of Baroda",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/Bank of Baroda.webp"
+					},
+					{
+						"title": "Bank of Maharshtra",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/Bank of Maharshtra.webp"
+					},
+					{
+						"title": "HDFC Bank",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/HDFC Bank.webp"
+					},
+					{
+						"title": "ICICI Bank",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/ICICI Bank.webp"
+					},
+					{
+						"title": "Kotak mahindra Bank",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/Kotak mahindra Bank.webp"
+					},
+					{
+						"title": "RBL Bank",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/RBL Bank.webp"
+					},
+					{
+						"title": "State Bank of India",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/State Bank of India.webp"
+					},
+					{
+						"title": "SVC Bank",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Banks/SVC Bank.webp"
+					}
+				],
+				"order": 2
+			},
+			{
+				"id": "vicinity-category-1783509244237",
+				"name": "Business Districts",
+				"images": [
+					{
+						"title": "Mindspace",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Business Districts/Mindspace.webp"
+					},
+					{
+						"title": "NESCO",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Business Districts/NESCO.webp"
+					},
+					{
+						"title": "Nirlon Knowledge Park",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Business Districts/Nirlon Knowledge Park.webp"
+					},
+					{
+						"title": "Oberoi Commerz II",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Business Districts/Oberoi Commerz II.webp"
+					}
+				],
+				"order": 3
+			},
+			{
+				"id": "vicinity-category-1783509266836",
+				"name": "Connectivity",
+				"images": [
+					{
+						"title": "Bangur Nagar Metro STation",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Bangur Nagar Metro STation.webp"
+					},
+					{
+						"title": "Bangur Nagar Police Chowky",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Bangur Nagar Police Chowky.webp"
+					},
+					{
+						"title": "Coastal Road",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Coastal Road.webp"
+					},
+					{
+						"title": "CSMIA T1",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/CSMIA T1.webp"
+					},
+					{
+						"title": "CSMIA T2",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/CSMIA T2.webp"
+					},
+					{
+						"title": "DN Nagar Metro Line 2B",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/DN Nagar Metro Line 2B.webp"
+					},
+					{
+						"title": "Goregaon Mulund Link Road",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Goregaon Mulund Link Road.webp"
+					},
+					{
+						"title": "Goregaon Railway Station",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Goregaon Railway Station.webp"
+					},
+					{
+						"title": "Malad Railway Station",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Malad Railway Station.webp"
+					},
+					{
+						"title": "Malad to Versova Connector",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Malad to Versova Connector.webp"
+					},
+					{
+						"title": "Navi Mumbai Int Airport",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Navi Mumbai Int Airport.webp"
+					},
+					{
+						"title": "Ram Mandir Station",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Ram Mandir Station.webp"
+					},
+					{
+						"title": "Swami Samarth Nagar Metro Station",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Connectivity/Swami Samarth Nagar Metro Station.webp"
+					}
+				],
+				"order": 4
+			},
+			{
+				"id": "vicinity-category-1783517954876",
+				"name": "Education",
+				"images": [
+					{
+						"title": "Amity Global Business School",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Amity Global Business School.webp"
+					},
+					{
+						"title": "Aquinas International School",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Aquinas International School.webp"
+					},
+					{
+						"title": "Bhavans College",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Bhavans College.webp"
+					},
+					{
+						"title": "Eurokids Preschool",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Eurokids Preschool.webp"
+					},
+					{
+						"title": "Hello Kids Preschool",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Hello Kids Preschool.webp"
+					},
+					{
+						"title": "Kangaroo Kids Preschool",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Kangaroo Kids Preschool.webp"
+					},
+					{
+						"title": "Little Millenium Preschool",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Little Millenium Preschool.webp"
+					},
+					{
+						"title": "Mithibai College",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Mithibai College.webp"
+					},
+					{
+						"title": "Narsee Monjee",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Narsee Monjee.webp"
+					},
+					{
+						"title": "NMIMS",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/NMIMS.webp"
+					},
+					{
+						"title": "Oberoi International School",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Oberoi International School.webp"
+					},
+					{
+						"title": "Podar Jumbo Kids",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Podar Jumbo Kids.webp"
+					},
+					{
+						"title": "SP Jain",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/SP Jain.webp"
+					},
+					{
+						"title": "Stellar World",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Stellar World.webp"
+					},
+					{
+						"title": "VIBGYOR High School",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/VIBGYOR High School.webp"
+					},
+					{
+						"title": "Witty International School",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Education/Witty International School.webp"
+					}
+				],
+				"order": 5
+			},
+			{
+				"id": "vicinity-category-1783517990339",
+				"name": "Hospitals",
+				"images": [
+					{
+						"title": "Cloudnine Hosp",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Hospitals/Cloudnine Hosp.webp"
+					},
+					{
+						"title": "Kapadia multispecialty ",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Hospitals/Kapadia multispecialty .webp"
+					},
+					{
+						"title": "Kokilaben Dhirubai Ambani",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Hospitals/Kokilaben Dhirubai Ambani.webp"
+					},
+					{
+						"title": "Lifeline Medicare Hosp",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Hospitals/Lifeline Medicare Hosp.webp"
+					},
+					{
+						"title": "Oscar super speciality Hosp",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Hospitals/Oscar super speciality Hosp.webp"
+					},
+					{
+						"title": "SRV Hosp",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Hospitals/SRV Hosp.webp"
+					}
+				],
+				"order": 6
+			},
+			{
+				"id": "vicinity-category-1783518018627",
+				"name": "Lifestyle",
+				"images": [
+					{
+						"title": "Baliboo",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Baliboo.webp"
+					},
+					{
+						"title": "Bayroute",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Bayroute.webp"
+					},
+					{
+						"title": "Blue Tokai Cafe ",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Blue Tokai Cafe .webp"
+					},
+					{
+						"title": "Boneto Fine Dine",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Boneto Fine Dine.webp"
+					},
+					{
+						"title": "Coffee By Di Bella",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Coffee By Di Bella.webp"
+					},
+					{
+						"title": "Emearald",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Emearald.webp"
+					},
+					{
+						"title": "Evershine Mall",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Evershine Mall.webp"
+					},
+					{
+						"title": "Fleur",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Fleur.webp"
+					},
+					{
+						"title": "FOO",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/FOO.webp"
+					},
+					{
+						"title": "Goregaon Sports Club",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Goregaon Sports Club.webp"
+					},
+					{
+						"title": "Infiniti 2 Mall",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Infiniti 2 Mall.webp"
+					},
+					{
+						"title": "Inorbit Mall",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Inorbit Mall.webp"
+					},
+					{
+						"title": "INOX megaplex",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/INOX megaplex.webp"
+					},
+					{
+						"title": "Musafeer Radison",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Musafeer Radison.webp"
+					},
+					{
+						"title": "Oberoi Mall",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Oberoi Mall.webp"
+					},
+					{
+						"title": "Poetry",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Poetry.webp"
+					},
+					{
+						"title": "PVR Icon",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/PVR Icon.webp"
+					},
+					{
+						"title": "PVR ICON - Oberoi Mall",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/PVR ICON - Oberoi Mall.webp"
+					},
+					{
+						"title": "PVR Infinity Mall",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/PVR Infinity Mall.webp"
+					},
+					{
+						"title": "Radison Hotel",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Radison Hotel.webp"
+					},
+					{
+						"title": "Sage Cafe",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Sage Cafe.webp"
+					},
+					{
+						"title": "Sante Spa",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Sante Spa.webp"
+					},
+					{
+						"title": "Sozo ",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Sozo .webp"
+					},
+					{
+						"title": "Starbuck",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Starbuck.webp"
+					},
+					{
+						"title": "The Fern",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/The Fern.webp"
+					},
+					{
+						"title": "The Westin",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/The Westin.webp"
+					},
+					{
+						"title": "Trnto Dining",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Lifestyle/Trnto Dining.webp"
+					}
+				],
+				"order": 7
+			},
+			{
+				"id": "vicinity-category-1783518116003",
+				"name": "Places of Worship",
+				"images": [
+					{
+						"title": "Ambe Mata",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Ambe Mata.webp"
+					},
+					{
+						"title": "ISKCIN",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/ISKCIN.webp"
+					},
+					{
+						"title": "Jain Mandir",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Jain Mandir.webp"
+					},
+					{
+						"title": "Mahalaxmi Mandir",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Mahalaxmi Mandir.webp"
+					},
+					{
+						"title": "Shri Ayappa",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Shri Ayappa.webp"
+					},
+					{
+						"title": "Shri Ichhapurti",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Shri Ichhapurti.webp"
+					},
+					{
+						"title": "Shri Ram Mandir",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Shri Ram Mandir.webp"
+					},
+					{
+						"title": "Suvarnakavach",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Suvarnakavach.webp"
+					},
+					{
+						"title": "Umiyadham",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Umiyadham.webp"
+					},
+					{
+						"title": "Vishwamohini",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Places of Worship/Vishwamohini.webp"
+					}
+				],
+				"order": 8
+			},
+			{
+				"id": "vicinity-category-1783518155315",
+				"name": "Retail",
+				"images": [
+					{
+						"title": "BMW Showroom",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/BMW Showroom.webp"
+					},
+					{
+						"title": "Croma",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/Croma.webp"
+					},
+					{
+						"title": "D Mart",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/D Mart.webp"
+					},
+					{
+						"title": "Hi Life Mart",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/Hi Life Mart.webp"
+					},
+					{
+						"title": "Hyundai Showroom",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/Hyundai Showroom.webp"
+					},
+					{
+						"title": "Kia Showroom",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/Kia Showroom.webp"
+					},
+					{
+						"title": "MG Motors",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/MG Motors.webp"
+					},
+					{
+						"title": "TATA Showroom",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/TATA Showroom.webp"
+					},
+					{
+						"title": "Vijay Sales",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/Vijay Sales.webp"
+					},
+					{
+						"title": "Westside",
+						"image": "https://assets.vestate.io/webtool/narang/valora/vicinities/Retail/Westside.webp"
+					}
+				],
+				"order": 9
+			}
+		],
+		"reverseDay": false,
+		"reverseNight": false,
+		"defaultMode": "day"
+	},
+	"exterior": {
+		"categories": []
+	},
+	"amenities": {
+		"categories": [
+			{
+				"id": "amenity-category-1783508987692",
+				"name": "Ground Amenities",
+				"zipUrl": "https://assets.vestate.io/webtool/narang/valora/amenities/Ground Amenities",
+				"order": 1
+			},
+			{
+				"id": "amenity-category-1783509003548",
+				"name": "Podium Level Amenities",
+				"zipUrl": "https://assets.vestate.io/webtool/narang/valora/amenities/Podium Level Amenities",
+				"order": 2
+			},
+			{
+				"id": "amenity-category-1784115558257",
+				"name": "Club Valora",
+				"zipUrl": "https://assets.vestate.io/webtool/narang/valora/amenities/Club Valora",
+				"order": 3
+			}
+		]
+	},
+	"interiors": {
+		"categories": [
+			{
+				"id": "interior-category-1783344069559",
+				"name": "3 BHK Unit",
+				"dollhouseImage": "https://assets.vestate.io/webtool/narang/valora/interiors/3Bhk Unit/dollhouse/3bhk-dollhouse.webp",
+				"zipUrl": "https://assets.vestate.io/webtool/narang/valora/interiors/3Bhk Unit",
+				"order": 1
+			},
+			{
+				"id": "interior-category-1783509090028",
+				"name": "4 BHK Unit",
+				"dollhouseImage": "https://assets.vestate.io/webtool/narang/valora/interiors/4 BHK Unit/dollhouse/4bhk.webp",
+				"zipUrl": "https://assets.vestate.io/webtool/narang/valora/interiors/4 BHK Unit",
+				"order": 2
+			},
+			{
+				"id": "interior-category-1783509104620",
+				"name": "Jodi Flat",
+				"dollhouseImage": "https://assets.vestate.io/webtool/narang/valora/interiors/Jodi Flat/dollhouse/jodi.webp",
+				"zipUrl": "https://assets.vestate.io/webtool/narang/valora/interiors/Jodi Flat",
+				"order": 3
+			}
+		]
+	},
+	"introVideo": "",
+	"customSections": [
+		{
+			"id": "custom-section-1783424166204",
+			"name": "Techbook",
+			"enabled": false,
+			"mode": "pages",
+			"images": [
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-01.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-02.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-03.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-04.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-05.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-06.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-07.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-08.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-09.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-10.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-11.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-12.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-13.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-14.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-15.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-16.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-17.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-18.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-19.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-20.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-21.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-22.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-23.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-24.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-25.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-26.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-27.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-28.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-29.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-30.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-31.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-32.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-33.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-34.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-35.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-36.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-37.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-38.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-39.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-40.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-41.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-42.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-43.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-44.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-45.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-46.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-47.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-48.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-49.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-50.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-51.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-52.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-53.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-54.webp",
+				"https://assets.vestate.io/webtool/narang/valora/custom/Techbook/VTB-55.webp"
+			],
+			"icon": "notebook-pen"
+		},
+		{
+			"id": "custom-section-1783512087579",
+			"name": "Master Plan",
+			"enabled": true,
+			"mode": "single",
+			"images": [],
+			"icon": "layers-2",
+			"image": "https://assets.vestate.io/webtool/narang/valora/custom/Master Plan/valora_site.webp"
+		},
+		{
+			"id": "custom-section-1783519593944",
+			"name": "Layout",
+			"enabled": true,
+			"mode": "dropdown",
+			"images": [
+				{
+					"title": "Jodi Floor Plan",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Jodi Floor Plan.webp"
+				},
+				{
+					"title": "Refuge Floor Plan 6th Floor",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Refuge Floor Plan 6th Floor.webp"
+				},
+				{
+					"title": "Refuge Floor Plan 13th & 27th Floor",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Refuge Floor Plan 13th & 27th Floor.webp"
+				},
+				{
+					"title": "Refuge Floor Plan 20th & 34th Floor",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Refuge Floor Plan 20th & 34th Floor.webp"
+				},
+				{
+					"title": "Refuge Floor Plan 41st Floor",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Refuge Floor Plan 41st Floor.webp"
+				},
+				{
+					"title": "Typical Floor Plan",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Typical Floor Plan.webp"
+				},
+				{
+					"title": "Unit 1",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 1.webp"
+				},
+				{
+					"title": "Unit 2",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 2.webp"
+				},
+				{
+					"title": "Unit 3",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 3.webp"
+				},
+				{
+					"title": "Unit 4",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 4.webp"
+				},
+				{
+					"title": "Unit 5",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 5.webp"
+				},
+				{
+					"title": "Unit 6",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 6.webp"
+				},
+				{
+					"title": "Unit 7",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 7.webp"
+				},
+				{
+					"title": "Unit 07 5.5BHK Duplex Lower Level",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 07 5.5BHK Duplex Lower Level.webp"
+				},
+				{
+					"title": "Unit 07 5.5BHK Duplex Upper Level",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 07 5.5BHK Duplex Upper Level.webp"
+				},
+				{
+					"title": "Valora Duplex 4k-01.jpg",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Valora Duplex 4k-01.jpg.webp"
+				},
+				{
+					"title": "Valora Duplex 4k-02.jpg",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Valora Duplex 4k-02.jpg.webp"
+				},
+				{
+					"title": "Valora Duplex 4k-03.jpg",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Valora Duplex 4k-03.jpg.webp"
+				},
+				{
+					"title": "Valora Duplex 4k-04.jpg",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Valora Duplex 4k-04.jpg.webp"
+				},
+				{
+					"title": "Valora Duplex 4k-05.jpg",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Valora Duplex 4k-05.jpg.webp"
+				},
+				{
+					"title": "Valora Duplex 4k-06.jpg",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Valora Duplex 4k-06.jpg.webp"
+				},
+				{
+					"title": "Unit 05-06 6BHK Duplex Lower Level",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 05-06 6BHK Duplex Lower Level.webp"
+				},
+				{
+					"title": "Unit 05-06 6BHK Duplex Upper Level",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 05-06 6BHK Duplex Upper Level.webp"
+				},
+				{
+					"title": "Unit 01 -02 6BHK Duplex Lower Level",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 01 -02 6BHK Duplex Lower Level.webp"
+				},
+				{
+					"title": "Unit 01-02 6BHK Duplex Upper Level",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Unit 01-02 6BHK Duplex Upper Level.webp"
+				},
+				{
+					"title": "Jodi Unit 1-2 4BHK Jodi",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Jodi Unit 1-2 4BHK Jodi.webp"
+				},
+				{
+					"title": "Jodi Unit 5-6 5BHK Jodi",
+					"image": "https://assets.vestate.io/webtool/narang/valora/custom/Layout/Jodi Unit 5-6 5BHK Jodi.webp"
+				}
+			],
+			"icon": "layout-dashboard"
+		},
+		{
+			"id": "custom-section-1783942570148",
+			"name": "Overview",
+			"enabled": true,
+			"mode": "dayNightPlus",
+			"images": [],
+			"dayNight": {
+				"day": [
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/1.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/2.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/3.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/4.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/5.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/6.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/7.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/8.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/9.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/10.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/11.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/12.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/13.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/14.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/15.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/16.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/17.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/18.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/19.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/20.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/21.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/22.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/23.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/day/24.webp"
+				],
+				"evening": [
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/1.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/2.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/3.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/4.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/5.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/6.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/7.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/8.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/9.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/10.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/11.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/12.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/13.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/14.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/15.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/16.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/17.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/18.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/19.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/20.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/21.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/22.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/23.webp",
+					"https://assets.vestate.io/webtool/narang/valora/custom/Overview/evening/24.webp"
+				],
+				"initialStartIndexDay": 1,
+				"initialStartIndexNight": 1
+			},
+			"catzipHeadName": "Aerial View",
+			"catzip": [
+				{
+					"id": "drone-morning",
+					"name": "Morning",
+					"zipUrl": "https://assets.vestate.io/webtool/narangvaloracustomoverview/Morning HDRI/app-files",
+					"order": 1
+				},
+				{
+					"id": "drone-afternoon",
+					"name": "Afternoon",
+					"zipUrl": "https://assets.vestate.io/webtool/narangvaloracustomoverview/Afternoon HDRI/app-files",
+					"order": 2
+				},
+				{
+					"id": "drone-evening",
+					"name": "Evening",
+					"zipUrl": "https://assets.vestate.io/webtool/narangvaloracustomoverview/Evening HDRI/app-files",
+					"order": 3
+				},
+				{
+					"id": "drone-night",
+					"name": "Night",
+					"zipUrl": "https://assets.vestate.io/webtool/narangvaloracustomoverview/Night HDRI/app-files",
+					"order": 4
+				}
+			],
+			"catzipHeadIcon": "drone",
+			"catstatHeadName": "Renders",
+			"catstat": [
+				{
+					"id": "catstat-category-1783951309759",
+					"name": "",
+					"images": [
+						{
+							"name": "Badminton/ Pickleball Court",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Badminton_Piclkleball court.webp"
+						},
+						{
+							"name": "Balcony 1",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/balcony1.webp"
+						},
+						{
+							"name": "Balcony 2",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/balcony2.webp"
+						},
+						{
+							"name": "Balcony 3",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/balcony3.webp"
+						},
+						{
+							"name": "Banquet Hall",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Banquet 300 01.webp"
+						},
+						{
+							"name": "Bedroom",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/bedroom.webp"
+						},
+						{
+							"name": "Business Centre",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Bussines Center.webp"
+						},
+						{
+							"name": "Front Elevation",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/FRONT FACEING.webp"
+						},
+						{
+							"name": "Gym",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Gym 300 01.webp"
+						},
+						{
+							"name": "Indoor Games Room",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Indoor Games 300 01.webp"
+						},
+						{
+							"name": "Kids Creche",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Kids Creche.webp"
+						},
+						{
+							"name": "Living Room 1",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/living1.webp"
+						},
+						{
+							"name": "Living Room 2",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/living2.webp"
+						},
+						{
+							"name": "Lobby",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Lobby 300 01.webp"
+						},
+						{
+							"name": "Reception and Lounge 1",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Lounge 300 01.webp"
+						},
+						{
+							"name": "Reception and Lounge 2",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Lounge 300 02.webp"
+						},
+						{
+							"name": "Worms Eye View",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Front View.webp"
+						},
+						{
+							"name": "Outdoor Projector Screen",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/outdoor_lawn.webp"
+						},
+						{
+							"name": "Salon",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/salon.webp"
+						},
+						{
+							"name": "Yoga Room",
+							"file": "https://assets.vestate.io/webtool/narangvaloracustomoverview/catstat/Yoga 300 01.webp"
+						}
+					],
+					"order": 1
+				}
+			],
+			"imageFit": "cover",
+			"catstatHeadIcon": "images",
+			"icon": "sparkles"
+		}
+	],
+	"theme": {
+		"primaryColor": "#3da8cd",
+		"secondaryColor": "#2596be",
+		"fontUrl": "",
+		"fontName": "",
+		"borderRadius": 8
+	},
+	"projectLogo": "https://assets.vestate.io/webtool/narang/valora/valora.webp",
+	"orgLogo": "https://assets.vestate.io/webtool/narang/narang.webp",
+	"introImage": "https://assets.vestate.io/webtool/narang/valora/intro/image/NARANG FRONT VIEW_1_FINAL.webp",
+	"vstateWatermark": false,
+	"collabToolProjectIdStaging": "PR-3pkCYMUYXrGznjEQywhZDAgyg",
+	"sectionOrder": [
+		"custom:custom-section-1783942570148",
+		"vicinities",
+		"amenities",
+		"interiors",
+		"brochure",
+		"custom:custom-section-1783512087579",
+		"custom:custom-section-1783519593944"
+	],
+	"sectionAliases": {
+		"amenities": "",
+		"brochure": "Collateral"
+	},
+	"navStyle": "sidebar"
 }

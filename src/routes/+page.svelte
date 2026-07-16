@@ -96,21 +96,25 @@
 
 			<!-- Bottom Navigation/CTA (Only if not redirecting) -->
 			{#if !isRedirecting}
-				<div 
-					in:fade={{ delay: 1500, duration: 1000 }} 
+				<div
+					in:fade={{ delay: 1500, duration: 1000 }}
 					class="absolute bottom-12 flex flex-col items-center gap-6"
 				>
-					<a 
+					<a
 						href="https://vestate.io/"
 						target="_blank"
 						rel="noopener noreferrer"
 						class="group relative flex items-center gap-3 overflow-hidden rounded-full border border-white/20 bg-white/5 px-8 py-3 text-sm font-medium tracking-widest text-white transition-all duration-300 hover:border-white/40 hover:bg-white/10 active:scale-95"
 					>
 						<span class="relative z-10 uppercase">Explore Platform</span>
-						<div class="absolute inset-0 z-0 translate-y-full bg-gradient-to-t from-white/10 to-transparent transition-transform duration-500 group-hover:translate-y-0"></div>
+						<div
+							class="absolute inset-0 z-0 translate-y-full bg-gradient-to-t from-white/10 to-transparent transition-transform duration-500 group-hover:translate-y-0"
+						></div>
 					</a>
 
-					<div class="flex items-center gap-4 text-[10px] font-medium uppercase tracking-[0.2em] text-white/30">
+					<div
+						class="flex items-center gap-4 text-[10px] font-medium uppercase tracking-[0.2em] text-white/30"
+					>
 						<span>AI Powered</span>
 						<span class="h-1 w-1 rounded-full bg-white/20"></span>
 						<span>Real-time 3D</span>

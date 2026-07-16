@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount, onDestroy } from 'svelte';
+	import { fade } from 'svelte/transition';
 	import { writable, get } from 'svelte/store';
 	import { hotspotName, projectConfig } from '../../../stores/ui';
 	import * as Accordion from '$lib/components/ui/accordion';
@@ -36,6 +37,11 @@
 	let selectedSceneId = writable(null);
 	let categoriesWithScenes = writable([]);
 
+	$: activeScene = (() => {
+		if (!currentCategory || !$selectedSceneId) return null;
+		return (currentCategory.scenes || []).find((s) => s.id === $selectedSceneId) || null;
+	})();
+
 	function resetNegativeTranslations(inputString, element) {
 		const translateRegex = /translate[XYZ]?\((-?\d+(\.\d+)?px)\)/g;
 		const transformedString = inputString.replace(translateRegex, (match, value) => {
@@ -63,9 +69,18 @@
 	}
 
 	function destroyViewer() {
-		if (unsubscribeHotSpot) { unsubscribeHotSpot(); unsubscribeHotSpot = null; }
-		if (unsubscribeViewChange) { unsubscribeViewChange(); unsubscribeViewChange = null; }
-		if (viewer) { viewer.destroy(); viewer = null; }
+		if (unsubscribeHotSpot) {
+			unsubscribeHotSpot();
+			unsubscribeHotSpot = null;
+		}
+		if (unsubscribeViewChange) {
+			unsubscribeViewChange();
+			unsubscribeViewChange = null;
+		}
+		if (viewer) {
+			viewer.destroy();
+			viewer = null;
+		}
 		allScenes = {};
 		const panoElement = document.getElementById('pano');
 		if (panoElement) panoElement.innerHTML = '';
@@ -75,6 +90,15 @@
 		if (!sectionConfig || sectionConfig.length === 0) return;
 		const categoriesData = await Promise.all(
 			sectionConfig.map(async (category) => {
+				if (!category.zipUrl && Array.isArray(category.images)) {
+					const scenes = category.images.map((img, i) => ({
+						id: img.image || img.url || `img-${i}`,
+						name: img.title || img.name || `Image ${i + 1}`,
+						isStatic: true,
+						imageUrl: img.image || img.url || ''
+					}));
+					return { ...category, scenes };
+				}
 				try {
 					const dataUrl = `${category.zipUrl}/data.json`;
 					const res = await fetch(dataUrl);
@@ -87,9 +111,13 @@
 				}
 			})
 		);
-		categoriesWithScenes.set(categoriesData.filter((cat) => cat !== null));
-		if (!currentCategory && categoriesData[0]) {
-			currentCategory = categoriesData[0];
+		const validCategories = categoriesData.filter((cat) => cat !== null);
+		categoriesWithScenes.set(validCategories);
+		if (!currentCategory && validCategories.length > 0) {
+			currentCategory = validCategories[0];
+			if (currentCategory.scenes && currentCategory.scenes.length > 0) {
+				switchToScene(currentCategory.scenes[0].id);
+			}
 		}
 	}
 
@@ -105,11 +133,16 @@
 		const res = await fetch(dataJson);
 		appData = await res.json();
 
-		viewer = new Marzipano.Viewer(document.getElementById('pano'), { controls: { mouseViewMode: 'drag' } });
+		viewer = new Marzipano.Viewer(document.getElementById('pano'), {
+			controls: { mouseViewMode: 'drag' }
+		});
 
 		const createScene = (sceneData) => {
 			const { id, levels, faceSize, initialViewParameters } = sceneData;
-			const source = Marzipano.ImageUrlSource.fromString(`${tilesFolder}/${id}/{z}/{f}/{y}/{x}.jpg`, { cubeMapPreviewUrl: `${tilesFolder}/${id}/preview.jpg` });
+			const source = Marzipano.ImageUrlSource.fromString(
+				`${tilesFolder}/${id}/{z}/{f}/{y}/{x}.jpg`,
+				{ cubeMapPreviewUrl: `${tilesFolder}/${id}/preview.jpg` }
+			);
 			const geometry = new Marzipano.CubeGeometry(levels);
 			const limiter = Marzipano.RectilinearView.limit.traditional(faceSize, (120 * Math.PI) / 180);
 			const view = new Marzipano.RectilinearView(initialViewParameters, limiter);
@@ -122,7 +155,8 @@
 			wrapper.classList.add('info-hotspot');
 			const imgHotspot = document.createElement('div');
 			const targetScene = appData.scenes.find((s) => s.id === hotspot.target);
-			const label = hotspot.name || (targetScene ? getSceneLabel(targetScene) : hotspot.target) || 'Area Label';
+			const label =
+				hotspot.name || (targetScene ? getSceneLabel(targetScene) : hotspot.target) || 'Area Label';
 			imgHotspot.innerText = label;
 			imgHotspot.classList.add('hotspot');
 			wrapper.appendChild(imgHotspot);
@@ -141,7 +175,8 @@
 			sceneData.linkHotspots?.forEach((hotspot) => createLinkHotspot(current.scene, hotspot));
 		});
 
-		let targetSceneId = (pendingSceneId && allScenes[pendingSceneId]) ? pendingSceneId : appData.scenes[0].id;
+		let targetSceneId =
+			pendingSceneId && allScenes[pendingSceneId] ? pendingSceneId : appData.scenes[0].id;
 		allScenes[targetSceneId].scene.switchTo();
 		hotspotName.set(targetSceneId);
 		selectedSceneId.set(targetSceneId);
@@ -157,7 +192,10 @@
 					const hotspotElement = e.querySelector('.hotspot');
 					if (hotspotElement) {
 						const hotspotWrapper = e as HTMLElement;
-						hotspotWrapper.style.transform = resetNegativeTranslations(hotspotWrapper.style.transform, hotspotElement);
+						hotspotWrapper.style.transform = resetNegativeTranslations(
+							hotspotWrapper.style.transform,
+							hotspotElement
+						);
 					}
 				});
 			});
@@ -177,14 +215,22 @@
 	let lastInitializedCategoryId = null;
 	$: if (mounted && currentCategory && currentCategory.id !== lastInitializedCategoryId) {
 		lastInitializedCategoryId = currentCategory.id;
-		initPanorama();
+		if (!currentCategory.zipUrl) {
+			const targetSceneId = pendingSceneId || currentCategory.scenes?.[0]?.id;
+			if (targetSceneId) {
+				switchToScene(targetSceneId);
+			}
+			pendingSceneId = null;
+		} else {
+			initPanorama();
+		}
 	}
 
 	function switchToScene(sceneId) {
+		selectedSceneId.set(sceneId);
+		hotspotName.set(sceneId);
 		if (!allScenes[sceneId]) return;
 		allScenes[sceneId].scene.switchTo();
-		hotspotName.set(sceneId);
-		selectedSceneId.set(sceneId);
 	}
 
 	function switchCategory(category, sceneId = null) {
@@ -196,18 +242,20 @@
 		pendingSceneId = sceneId;
 	}
 
-	function getSceneLabel(scene) { return scene.name || scene.id || 'Unnamed Scene'; }
+	function getSceneLabel(scene) {
+		return scene.name || scene.id || 'Unnamed Scene';
+	}
 </script>
 
 {#if !config || Object.keys(config).length === 0 || !isSectionVisible}
 	<SectionFallback />
 {:else}
-	<SleekSidePanel 
-		isRightSidebar={true} 
+	<SleekSidePanel
+		isRightSidebar={true}
 		title={config?.sectionAliases?.[sectionId]?.trim() || sectionId}
 		iconName={sectionId}
 		isMinimized={$isMinimized}
-		toggleMinimize={() => $isMinimized = !$isMinimized}
+		toggleMinimize={() => ($isMinimized = !$isMinimized)}
 	>
 		<!-- SLEEK SIDEBAR CONTENT -->
 		{#if $categoriesWithScenes && $categoriesWithScenes.length > 0}
@@ -215,7 +263,7 @@
 				<SleekAccordion title={category.name || 'Unnamed Category'} isOpen={index === 0}>
 					{#if category.scenes && category.scenes.length > 0}
 						{#each category.scenes as scene}
-							<SleekButton 
+							<SleekButton
 								active={$hotspotName == scene.id}
 								onClick={() => switchCategory(category, scene.id)}
 							>
@@ -233,8 +281,26 @@
 	</SleekSidePanel>
 {/if}
 
+{#if activeScene?.isStatic}
+	<div
+		class="absolute inset-0 z-10 flex items-center justify-center bg-black"
+		transition:fade={{ duration: 300 }}
+	>
+		<img
+			src={activeScene.imageUrl}
+			alt={activeScene.name}
+			class="max-h-full max-w-full object-contain"
+		/>
+	</div>
+{/if}
+
 <div id="pano" class="absolute inset-0"></div>
 
 <style>
-	#pano { width: 100%; height: 100vh; background: black; z-index: 1; }
+	#pano {
+		width: 100%;
+		height: 100vh;
+		background: black;
+		z-index: 1;
+	}
 </style>
