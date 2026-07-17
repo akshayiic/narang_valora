@@ -66,6 +66,9 @@
 		"defaultMode": "day"
 	},
 	"collabToolEnabled": true,
+	"collabToolProjectIdTest": "PR-3pkCYMUYXrGznjEQywhZDAgyg",
+	"collabToolProjectIdStaging": "PR-3pkCYMUYXrGznjEQywhZDAgyg",
+	"collabToolProjectIdLive": "PR-3pkCYMUYXrGznjEQywhZDAgyg",
 	"sectionVisibility": {
 		"overview": false,
 		"amenities": true,
@@ -1515,7 +1518,6 @@
 	"orgLogo": "https://assets.vestate.io/webtool/narang/narang.webp",
 	"introImage": "https://assets.vestate.io/webtool/narang/valora/intro/image/NARANG FRONT VIEW_1_FINAL.webp",
 	"vstateWatermark": false,
-	"collabToolProjectIdStaging": "PR-3pkCYMUYXrGznjEQywhZDAgyg",
 	"sectionOrder": [
 		"custom:custom-section-1783942570148",
 		"vicinities",

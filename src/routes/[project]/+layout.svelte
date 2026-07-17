@@ -58,6 +58,17 @@
 
 	$: pathParts = $page.url.pathname.split('/').filter(Boolean);
 	$: isRootProjectPage = pathParts.length === 1;
+
+
+	// HARDCODED for debugging — remove after testing
+	if (!document.getElementById('vretail-script')) {
+		const script = document.createElement('script');
+		script.id = 'vretail-script';
+		script.src = 'https://collab-test.core.vretail.space/vretail-collab.umd.js';
+		script.setAttribute('data-vretail-project-id', 'PR-3pkCYMUYXrGznjEQywhZDAgyg');
+		document.body.appendChild(script);
+	}
+
 </script>
 
 <div
